@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans" sans-serif;
+}
+.logo {
+  font-family: "Odor Mean Chey", serif;
+}
+#section-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      99.1deg,
+      #183619 31.55%,
+      rgba(88, 115, 77, 0) 72.39%,
+      rgba(201, 251, 183, 0) 120.9%
+    ),
+    url("./images/img1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .k {
+    text-indent: -9999px;
+    line-height: 0;
+  }
+  .k::after {
+    content: "Sustainable future";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+  }
+}
+
+@media (min-width: 1280) {
+  .k {
+    text-indent: -9999px;
+    line-height: 0;
+  }
+  .k::after {
+    content: "Create sustainable future";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+  }
+}
+}
