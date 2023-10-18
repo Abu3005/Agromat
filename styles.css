@@ -4,6 +4,7 @@ body {
 }
 .logo {
   font-family: "Odor Mean Chey", serif;
+  color: #c76001;
 }
 #section-1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -18,11 +19,11 @@ body {
   background-size: cover;
 }
 @media (min-width: 768px) {
-  .k {
+  .m {
     text-indent: -9999px;
     line-height: 0;
   }
-  .k::after {
+  .m::after {
     content: "Sustainable future";
     text-indent: 0;
     display: block;
@@ -42,4 +43,6 @@ body {
     line-height: initial;
   }
 }
+.all > *:not(#blur) {
+  filter: blur(3px);
 }

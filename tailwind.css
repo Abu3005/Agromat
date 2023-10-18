@@ -1,3 +1,6 @@
 @tailwind base;
+#k:checked ~ label div.dot {
+  @apply translate-x-4;
+}
 @tailwind components;
 @tailwind utilities;

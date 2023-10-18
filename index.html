@@ -6,15 +6,39 @@
     <title>Document</title>
     <link href="./css/output.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
   </head>
-  <body class="">
+
+<!-- body > *:not(#loading) {
+  filter: blur(3px);
+}
+<div>Some DIV.</div>
+<div id="loading">Loading DIV
+    <div style='padding:15px;'>Some other DIV inside loading div.</div>
+</div>
+<div>Some other DIV.</div>
+<p>A paragraph.</p> -->
+
+  <body class="body relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white ">
+    
     <header
-      class="2xl:px-16 w-full h-24 bg-white py-6 px-10 lg:px-12 z-50 fixed"
+      class="disap head w-full h-24 bg-white py-6 px-5 z-50 fixed shadow-lg"
     >
       <nav class="flex justify-between items-center">
         <p class="text-[#218225] logo xl:text-4xl lg:text-3xl md:text-2xl">
           Agromart
         </p>
+                  <!-- Dark and Light Mode -->
+        <div class="flex justify-center items-center">
+                <input id="k" type="checkbox" class="hidden">
+                <span class="pr-2 text-xs text-green-400">Light</span>
+                <label for="k">
+                    <div class="mode h-5 flex items-center pl-1 bg-red-700 w-10 dark:bg-[#090913]   rounded-full">
+                        <div type="checkbox" class="dot shadow-lg h-4 w-4 bg-white transform duration-300 ease-in-out rounded-full"></div>
+                    </div>
+                </label>
+                <span class="pl-2 text-xs text-[#090913]"">Dark</span>
+            </div>
         <div class="links gap-5 md-gap-6 lg:gap-8 xl:gap-20 items-center flex">
           <ul class="lg:flex md:gap-3 lg:gap-6 xl:gap-12 hidden">
             <li><a href="">Home</a></li>
@@ -78,28 +102,46 @@
               <a href="">Sign Up</a>
             </li>
           </ul>
-          <ul class="flex flex-col gap-1 lg:hidden">
+          <ul class="nav-logo flex flex-col gap-1 lg:hidden">
             <li class="h-1 w-10 bg-black"></li>
             <li class="h-1 w-7 bg-black ml-3"></li>
             <li class="h-1 w-3 bg-black ml-7 bg-custom-image"></li>
           </ul>
         </div>
       </nav>
-    </header>
-    <main>
+    </header> 
+                            <!-- OVERLAY -->
+    <div id="blur" class="hidden fixed over h-screen w-[70vw] bg-white text-[#218225] justify-center items-center z-50">
+      <i class="times fa-solid fa-xmark absolute text-2xl right-10 top-10"></i>
+      <ul class="flex flex-col text-center justify-center gap-10 md:text-3xl text-2xl">
+        <li>
+          <p class="text-[#218225] logo font-bold xl:text-5xl text-4xl">Agromart</p>
+        </li>
+         <li><a class="top px-4 py-1 hover:bg-[#218225] shadow-zinc-300 hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1" href="#about">About</a></li>
+         <li><a class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1" href="#feature">Features</a></li>
+         <li><a class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1" href="#choice">Choice</a></li>
+         <li><a class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1" href="#contact">Contacts</a></li>
+         <li
+              
+            >
+              <a class="bg-[#218225] text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1" href="">Register</a>
+          </li>
+      </ul>
+    </div>
+    <main class="disap">
       <section
         id="section-1"
         class="2xl:px-16 lg:grid lg:grid-cols-2 text-white pb-36 pt-60 px-4 sm:px-10"
       >
         <div class="flex justify-center items-center flex-col text-base">
-          <ul class="flex flex-col md:gap-5 gap-3">
-            <li class="text-[#C76001] logo">Agromart</li>
-            <li
+          <div class="flex flex-col md:gap-5 gap-3">
+            <h3 class="text-[#C76001] logo">Agromart</h3>
+            <h1
               class="xl:text-[55px] xl:leading-[63.5px] md:text-5xl font-bold sm:text-4xl text-3xl"
             >
               Connect you to fresh, local produce
-            </li>
-            <li>
+            </h1>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium, aperiam, aliquam iste, dicta officiis quod vitae
               ducimus modi debitis esse asperiores? Corrupti sunt magnam
@@ -107,7 +149,7 @@
               natus. A totam dolores illum aliquam voluptates corporis magnam
               cum, aut voluptas error necessitatibus delectus provident nostrum
               molestiae.
-            </li>
+            </p>
             <div class="mt-14">
               <button
                 class="xl:px-10 md:uppercase sm:ml-4 xl:py-4 sm:px-7 sm:py-2.5 px-6 py-2 rounded-md bg-white text-[#2A303E] leading-7"
@@ -120,7 +162,7 @@
                 Partner With Us
               </button>
             </div>
-          </ul>
+          </div>
         </div>
         <div></div>
       </section>
@@ -132,24 +174,24 @@
             <ul
               class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
             >
-              <li class="text-[#C76001] lg:text-3xl md:text-2xl logo">
-                Our Mission
-              </li>
-              <li
+              <h3 class="lg:text-3xl md:text-2xl logo">
+                Our 
+              </h3>
+              <h1
                 class="k text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold"
               >
                 Create sustainable future
-              </li>
-              <li>
+              </h1>
+              <p>
                 Agromart is on a mission to create a sustainable future by
                 connecting consumers with small-scale farmers. We believe in the
                 power of local food systems to promote healthy eating, support
                 rural communities, and protect our environment.
-              </li>
-              <li>
+              </p>
+              <p>
                 By using our platform, you're joining us in this mission and
                 supporting a better food system for all.
-              </li>
+              </p>
             </ul>
           </div>
 
@@ -177,16 +219,16 @@
             <ul
               class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
             >
-              <li class="text-[#C76001] lg:text-3xl md:text-2xl logo">
+              <h3 class="lg:text-3xl md:text-2xl logo">
                 Our Services
-              </li>
-              <li
-                class="k text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold"
+              </h3>
+              <h1
+                class="m text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold"
               >
                 Designed for everyone to participate in a healthy food system
                 with ease.
-              </li>
-              <li>
+              </h1>
+              <p>
                 At Agromart, we provide the perfect service for connecting
                 farmers with customers looking for the freshiest, healthiest,
                 and most sustainable produce. Our platform is designed to make
@@ -196,13 +238,13 @@
                 the source. Whether you're a farmer looking to expand your
                 customer base or for expert consultation or a customer looking
                 for the best produce, we're here to help you.
-              </li>
+              </p>
             </ul>
           </div>
 
           <div class="w-full md:block flex justify-center items-center">
             <button
-              class="inline px-10 bg-[#218225] text-white py-4 rounded-sm uppercase"
+              class="inline px-10 bg-[#218225] text-white py-4 rounded-md uppercase"
             >
               Learn More
             </button>
@@ -216,6 +258,78 @@
           />
         </div>
       </section>
+      <section
+        class="mt-5 sm:gap-x-4 px-4 sm:px-10 sm:grid lg:grid-cols-3 sm:grid-cols-4 md:gap-x-6 lg:gap-8 xl:gap-12"
+      >
+      <div class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-3">
+          <img class="w-11 sm:w-14 md:w-9" src="./images/Connect.png" alt="">
+          <p class="text-[#218225]  text-xl sm:text-xl font-bold">Connecting farmers & Customers</p>
+        </div>
+        <p class="mt-4">Shop with us for the freshiest, healthiest, and most sustainable produce directly from local farmers and enjoy the benefits of a healthy food system.</p>
+        <p class="mt-8 text-[#1A78C2]">Explore available products</p>
+      </div>
+      <div class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-3">
+          <img class="w-11 sm:w-14 md:w-9" src="./images/expert.png" alt="">
+          <p class="text-[#218225]  text-xl sm:text-xl font-bold">Expert Consultations for farmers</p>
+        </div>
+        <p class="mt-4">Get expert advice and consultation services from our experienced professionals to improve your farming practices and increase your profitability.</p>
+        <p class="mt-8 text-[#1A78C2]">Get Expert consultations</p>
+      </div>
+      <div class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-start-2  col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-3">
+          <img class="w-11 sm:w-14 md:w-9" src="./images/grow.png" alt="">
+          <p class="text-[#218225]  text-xl sm:text-xl font-bold">Grow your farming business</p>
+        </div>
+        <p class="mt-4">Partner with us to expand your customer base, rent farming equipment, and access resources to help you succeed.</p>
+        <p class="mt-14 text-[#1A78C2]">Partner with us</p>
+      </div>
+      
+    </section>
+    <section  class="mt-24 px-4 sm:px-10 ">
+      <h1 class="logo  lg:text-3xl md:text-2xl">Our Product</h1>
+      <p class="pt-3 text-gray-900">Discover all categories of our farm-to-table pricing and order fresh produce delivered straight to your doorstep, or visit us at the farm for a closer look at our sustainable farming practices.</p>
+      <div class="md:grid pb-10 shadow-md mt-10 sm:grid-cols-2 md:gap-6 lg:gap-8 xl:gap-12">
+        <img class="mb-7 border-white rounded-lg border-4" src="./images/egg.png" alt="">
+        <div class=" px-4">
+          <div class="flex justify-between pb-7">
+            <p class="font-700 text-4xl">Eggs</p>
+            <div class="">
+              <span class="logo">starrrrr</span>
+              <span class="text-gray-700 text-xl">243</span>
+            </div>
+          </div>
+          <ul class="flex flex-col gap-5">
+            <li class="text-gray-700">Origin: <span class="font-semibold text-[#191819]">Nigeria</span></li>
+            <li class="text-gray-700">Description: <span class="text-[#191819] font-semibold">Edible Natural color, Grade A</span></li>
+            <li class="text-gray-700">Price: <span class="
+             text-2xl text-[#C89200]">#1,200/Crate</span></li>
+          </ul>
+          <button class="w-full  rounded-md mt-10 block bg-[#218225] text-[#fff] py-3 uppercase ">Add to cart</button>
+        </div>
+      </div>
+    </section>
+    <section class="mt-12">
+      <p>hddjdjdjdj</p>
+    </section>
     </main>
+    
+    <script src="script.js"></script>
   </body>
 </html>
+
+
+
+<!-- <section class="prose">
+        <h1>dhdhdhdhd</h1>
+        <p>
+          wksjdndjdjdjdjdjdjddddndndndnnnnnnnnnnnnn Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Unde, assumenda praesentium. Aperiam
+          ipsum reiciendis beatae ipsam architecto illo quae deserunt!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          veritatis voluptates non, ex cumque illum!
+        </p>
+      </section> -->
