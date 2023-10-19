@@ -9,7 +9,7 @@
     <link href="fontawesome/css/all.css" rel="stylesheet" />
   </head>
 
-<!-- body > *:not(#loading) {
+  <!-- body > *:not(#loading) {
   filter: blur(3px);
 }
 <div>Some DIV.</div>
@@ -19,8 +19,9 @@
 <div>Some other DIV.</div>
 <p>A paragraph.</p> -->
 
-  <body class="body relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white ">
-    
+  <body
+    class="body relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
+  >
     <header
       class="disap head w-full h-24 bg-white py-6 px-5 z-50 fixed shadow-lg"
     >
@@ -28,17 +29,22 @@
         <p class="text-[#218225] logo xl:text-4xl lg:text-3xl md:text-2xl">
           Agromart
         </p>
-                  <!-- Dark and Light Mode -->
+        <!-- Dark and Light Mode -->
         <div class="flex justify-center items-center">
-                <input id="k" type="checkbox" class="hidden">
-                <span class="pr-2 text-xs text-green-400">Light</span>
-                <label for="k">
-                    <div class="mode h-5 flex items-center pl-1 bg-red-700 w-10 dark:bg-[#090913]   rounded-full">
-                        <div type="checkbox" class="dot shadow-lg h-4 w-4 bg-white transform duration-300 ease-in-out rounded-full"></div>
-                    </div>
-                </label>
-                <span class="pl-2 text-xs text-[#090913]"">Dark</span>
+          <input id="k" type="checkbox" class="hidden" />
+          <span class="pr-2 text-xs text-green-400">Light</span>
+          <label for="k">
+            <div
+              class="mode h-5 flex items-center pl-1 bg-red-700 w-10 dark:bg-[#090913] rounded-full"
+            >
+              <div
+                type="checkbox"
+                class="dot shadow-lg h-4 w-4 bg-white transform duration-300 ease-in-out rounded-full"
+              ></div>
             </div>
+          </label>
+          <span class="pl-2 text-xs text-[#090913]">Dark</span>
+        </div>
         <div class="links gap-5 md-gap-6 lg:gap-8 xl:gap-20 items-center flex">
           <ul class="lg:flex md:gap-3 lg:gap-6 xl:gap-12 hidden">
             <li><a href="">Home</a></li>
@@ -97,7 +103,7 @@
               <a href="">Sign In</a>
             </li>
             <li
-              class="bg-[#218225] text-white lg:py-3 lg:px-6 py-2 px-4 rounded-sm border border-1 border-[#218225]"
+              class="bg-[#218225] text-white lg:py-3 lg:px-6 py-2 px-4 rounded-smborder border-1 border-[#218225]"
             >
               <a href="">Sign Up</a>
             </li>
@@ -109,23 +115,56 @@
           </ul>
         </div>
       </nav>
-    </header> 
-                            <!-- OVERLAY -->
-    <div id="blur" class="hidden fixed over h-screen w-[70vw] bg-white text-[#218225] justify-center items-center z-50">
+    </header>
+    <!-- OVERLAY -->
+    <div
+      id="blur"
+      class="hidden fixed over h-screen w-[70vw] bg-white text-[#218225] justify-center items-center z-50"
+    >
       <i class="times fa-solid fa-xmark absolute text-2xl right-10 top-10"></i>
-      <ul class="flex flex-col text-center justify-center gap-10 md:text-3xl text-2xl">
+      <ul
+        class="flex flex-col text-center justify-center gap-10 md:text-3xl text-2xl"
+      >
         <li>
-          <p class="text-[#218225] logo font-bold xl:text-5xl text-4xl">Agromart</p>
+          <p class="text-[#218225] logo font-bold xl:text-5xl text-4xl">
+            Agromart
+          </p>
         </li>
-         <li><a class="top px-4 py-1 hover:bg-[#218225] shadow-zinc-300 hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1" href="#about">About</a></li>
-         <li><a class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1" href="#feature">Features</a></li>
-         <li><a class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1" href="#choice">Choice</a></li>
-         <li><a class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1" href="#contact">Contacts</a></li>
-         <li
-              
-            >
-              <a class="bg-[#218225] text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1" href="">Register</a>
-          </li>
+        <li>
+          <a
+            class="top px-4 py-1 hover:bg-[#218225] shadow-zinc-300 hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+            href="#about"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+            href="#feature"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a
+            class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+            href="#choice"
+            >Choice</a
+          >
+        </li>
+        <li>
+          <a
+            class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+            href="#contact"
+            >Contacts</a
+          >
+        </li>
+        <li>
+          <a
+            class="bg-[#218225] text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
+            href=""
+            >Register</a
+          >
+        </li>
       </ul>
     </div>
     <main class="disap">
@@ -152,12 +191,12 @@
             </p>
             <div class="mt-14">
               <button
-                class="xl:px-10 md:uppercase sm:ml-4 xl:py-4 sm:px-7 sm:py-2.5 px-6 py-2 rounded-md bg-white text-[#2A303E] leading-7"
+                class="xl:px-10 md:uppercase sm:ml-4 xl:py-4 sm:px-7 sm:py-2.5 px-6 py-2.5 rounded-sm bg-white text-[#2A303E] leading-7"
               >
                 Shop Our Product
               </button>
               <button
-                class="xl:ml-8 ml-1 sm:ml-4 xl:px-10 xl:py-4 sm:px-7 sm:py-2.5 px-6 py-2 md:uppercase rounded-md bg-[#FBC533] text-[#181C23] leading-7"
+                class="xl:ml-8 ml-1 sm:ml-4 xl:px-10 xl:py-4 sm:px-7 sm:py-2.5 px-6 py-2.5 md:uppercase rounded-sm bg-[#FBC533] text-[#181C23] leading-7"
               >
                 Partner With Us
               </button>
@@ -174,9 +213,7 @@
             <ul
               class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
             >
-              <h3 class="lg:text-3xl md:text-2xl logo">
-                Our 
-              </h3>
+              <h3 class="lg:text-3xl md:text-2xl logo">Our</h3>
               <h1
                 class="k text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold"
               >
@@ -219,9 +256,7 @@
             <ul
               class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
             >
-              <h3 class="lg:text-3xl md:text-2xl logo">
-                Our Services
-              </h3>
+              <h3 class="lg:text-3xl md:text-2xl logo">Our Services</h3>
               <h1
                 class="m text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold"
               >
@@ -261,65 +296,696 @@
       <section
         class="mt-5 sm:gap-x-4 px-4 sm:px-10 sm:grid lg:grid-cols-3 sm:grid-cols-4 md:gap-x-6 lg:gap-8 xl:gap-12"
       >
-      <div class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-span-2 lg:col-span-1">
-        <div class="flex items-center gap-3">
-          <img class="w-11 sm:w-14 md:w-9" src="./images/Connect.png" alt="">
-          <p class="text-[#218225]  text-xl sm:text-xl font-bold">Connecting farmers & Customers</p>
+        <div
+          class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-span-2 lg:col-span-1"
+        >
+          <div class="flex items-center gap-3">
+            <img
+              class="w-11 sm:w-14 md:w-9"
+              src="./images/Connect.png"
+              alt=""
+            />
+            <p class="text-[#218225] text-xl sm:text-xl font-bold">
+              Connecting farmers & Customers
+            </p>
+          </div>
+          <p class="mt-4">
+            Shop with us for the freshiest, healthiest, and most sustainable
+            produce directly from local farmers and enjoy the benefits of a
+            healthy food system.
+          </p>
+          <p class="mt-8 text-[#1A78C2]">Explore available products</p>
         </div>
-        <p class="mt-4">Shop with us for the freshiest, healthiest, and most sustainable produce directly from local farmers and enjoy the benefits of a healthy food system.</p>
-        <p class="mt-8 text-[#1A78C2]">Explore available products</p>
-      </div>
-      <div class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-span-2 lg:col-span-1">
-        <div class="flex items-center gap-3">
-          <img class="w-11 sm:w-14 md:w-9" src="./images/expert.png" alt="">
-          <p class="text-[#218225]  text-xl sm:text-xl font-bold">Expert Consultations for farmers</p>
+        <div
+          class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-span-2 lg:col-span-1"
+        >
+          <div class="flex items-center gap-3">
+            <img class="w-11 sm:w-14 md:w-9" src="./images/expert.png" alt="" />
+            <p class="text-[#218225] text-xl sm:text-xl font-bold">
+              Expert Consultations for farmers
+            </p>
+          </div>
+          <p class="mt-4">
+            Get expert advice and consultation services from our experienced
+            professionals to improve your farming practices and increase your
+            profitability.
+          </p>
+          <p class="mt-8 text-[#1A78C2]">Get Expert consultations</p>
         </div>
-        <p class="mt-4">Get expert advice and consultation services from our experienced professionals to improve your farming practices and increase your profitability.</p>
-        <p class="mt-8 text-[#1A78C2]">Get Expert consultations</p>
-      </div>
-      <div class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-start-2  col-span-2 lg:col-span-1">
-        <div class="flex items-center gap-3">
-          <img class="w-11 sm:w-14 md:w-9" src="./images/grow.png" alt="">
-          <p class="text-[#218225]  text-xl sm:text-xl font-bold">Grow your farming business</p>
+        <div
+          class="mt-12 pb-8 rounded-md shadow-lg px-5 pt-5 md:text-base col-start-2 col-span-2 lg:col-span-1"
+        >
+          <div class="flex items-center gap-3">
+            <img class="w-11 sm:w-14 md:w-9" src="./images/grow.png" alt="" />
+            <p class="text-[#218225] text-xl sm:text-xl font-bold">
+              Grow your farming business
+            </p>
+          </div>
+          <p class="mt-4">
+            Partner with us to expand your customer base, rent farming
+            equipment, and access resources to help you succeed.
+          </p>
+          <p class="mt-14 text-[#1A78C2]">Partner with us</p>
         </div>
-        <p class="mt-4">Partner with us to expand your customer base, rent farming equipment, and access resources to help you succeed.</p>
-        <p class="mt-14 text-[#1A78C2]">Partner with us</p>
-      </div>
-      
-    </section>
-    <section  class="mt-24 px-4 sm:px-10 ">
-      <h1 class="logo  lg:text-3xl md:text-2xl">Our Product</h1>
-      <p class="pt-3 text-gray-900">Discover all categories of our farm-to-table pricing and order fresh produce delivered straight to your doorstep, or visit us at the farm for a closer look at our sustainable farming practices.</p>
-      <div class="md:grid pb-10 shadow-md mt-10 sm:grid-cols-2 md:gap-6 lg:gap-8 xl:gap-12">
-        <img class="mb-7 border-white rounded-lg border-4" src="./images/egg.png" alt="">
-        <div class=" px-4">
-          <div class="flex justify-between pb-7">
-            <p class="font-700 text-4xl">Eggs</p>
-            <div class="">
-              <span class="logo">starrrrr</span>
-              <span class="text-gray-700 text-xl">243</span>
+      </section>
+
+      <section class="mt-24 px-4 sm:px-10">
+        <h1 class="logo lg:text-3xl md:text-2xl">Our Product</h1>
+        <p class="pt-3 text-gray-900">
+          Discover all categories of our farm-to-table pricing and order fresh
+          produce delivered straight to your doorstep, or visit us at the farm
+          for a closer look at our sustainable farming practices.
+        </p>
+        
+        <!-- ALL CART HERE -->
+        <div
+          class="sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 2xl:grid-cols-4 mt-10"
+        >
+
+
+          <!-- Each cart -->
+          <div class="mt-8 product sm:mt-0">
+            <div class="pb-10 shadow-md">
+              <img
+                class="rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt=""
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo">
+                      <span class="logo text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star text-gray-200"></i>
+                      </span>
+                    </span>
+                    <span class="text-gray-400 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"></span>
+                      &nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price: 
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full rounded-md mt-10 block bg-[#218225] text-[#fff] py-4 uppercase"
+                >
+                  Add to cart
+                </button>
+              </div>
             </div>
           </div>
-          <ul class="flex flex-col gap-5">
-            <li class="text-gray-700">Origin: <span class="font-semibold text-[#191819]">Nigeria</span></li>
-            <li class="text-gray-700">Description: <span class="text-[#191819] font-semibold">Edible Natural color, Grade A</span></li>
-            <li class="text-gray-700">Price: <span class="
-             text-2xl text-[#C89200]">#1,200/Crate</span></li>
-          </ul>
-          <button class="w-full  rounded-md mt-10 block bg-[#218225] text-[#fff] py-3 uppercase ">Add to cart</button>
+
+          <!--  TWO BUTTON CARD -->
+          <div class="mt-8 sm:mt-0 product">
+            <div class="pb-10 shadow-md">
+              <img
+                class=" rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt="Egg"
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo text-xl">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-gray-200"></i>
+                    </span>
+                    <span class="text-gray-700 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"
+                      >&nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price:
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <div class="grid grid-cols-3 mt-10">
+                  <button class="text-4xl rounded-md bg-[#fff] border border-[#218225] text-[#218225]">
+                    <i class="fa-sharp fa-solid fa-minus"></i>
+                  </button>
+                  <div
+                    class="self-center text-5xl justify-self-center rounded-md"
+                  >
+                    <p>3</p>
+                  </div>
+                  <button
+                    class="text-4xl py-2 rounded-md -center bg-[#218225] text-[#fff]"
+                  >
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 product sm:mt-0">
+            <div class="pb-10 shadow-md">
+              <img
+                class="rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt=""
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo">
+                      <span class="logo text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star text-gray-200"></i>
+                      </span>
+                    </span>
+                    <span class="text-gray-400 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"></span>
+                      &nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price: 
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full rounded-md mt-10 block bg-[#218225] text-[#fff] py-4 uppercase"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="mt-8 product sm:mt-0">
+            <div class="pb-10 shadow-md">
+              <img
+                class="rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt=""
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo">
+                      <span class="logo text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star text-gray-200"></i>
+                      </span>
+                    </span>
+                    <span class="text-gray-400 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"></span>
+                      &nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price: 
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full rounded-md mt-10 block bg-[#218225] text-[#fff] py-4 uppercase"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--  TWO BUTTON CARD -->
+          <div class="mt-8 sm:mt-0 product">
+            <div class="pb-10 shadow-md">
+              <img
+                class=" rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt="Egg"
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo text-xl">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-gray-200"></i>
+                    </span>
+                    <span class="text-gray-700 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"
+                      >&nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price:
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <div class="grid grid-cols-3 mt-10">
+                  <button class="text-4xl rounded-md bg-[#fff] border border-[#218225] text-[#218225]">
+                    <i class="fa-sharp fa-solid fa-minus"></i>
+                  </button>
+                  <div
+                    class="self-center text-5xl justify-self-center rounded-md"
+                  >
+                    <p>3</p>
+                  </div>
+                  <button
+                    class="text-4xl py-2 rounded-md -center bg-[#218225] text-[#fff]"
+                  >
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 product sm:mt-0">
+            <div class="pb-10 shadow-md">
+              <img
+                class="rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt=""
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo">
+                      <span class="logo text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star text-gray-200"></i>
+                      </span>
+                    </span>
+                    <span class="text-gray-400 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"></span>
+                      &nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price: 
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full rounded-md mt-10 block bg-[#218225] text-[#fff] py-4 uppercase"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 product sm:mt-0">
+            <div class="pb-10 shadow-md">
+              <img
+                class="rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt=""
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo">
+                      <span class="logo text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star text-gray-200"></i>
+                      </span>
+                    </span>
+                    <span class="text-gray-400 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"></span>
+                      &nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price: 
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full rounded-md mt-10 block bg-[#218225] text-[#fff] py-4 uppercase"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--  TWO BUTTON CARD -->
+          <div class="mt-8 sm:mt-0 product">
+            <div class="pb-10 shadow-md">
+              <img
+                class=" rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt="Egg"
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo text-xl">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-gray-200"></i>
+                    </span>
+                    <span class="text-gray-700 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"
+                      >&nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price:
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <div class="grid grid-cols-3 mt-10">
+                  <button class="text-4xl rounded-md bg-[#fff] border border-[#218225] text-[#218225]">
+                    <i class="fa-sharp fa-solid fa-minus"></i>
+                  </button>
+                  <div
+                    class="self-center text-5xl justify-self-center rounded-md"
+                  >
+                    <p>3</p>
+                  </div>
+                  <button
+                    class="text-4xl py-2 rounded-md -center bg-[#218225] text-[#fff]"
+                  >
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 product sm:mt-0">
+            <div class="pb-10 shadow-md">
+              <img
+                class="rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt=""
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo">
+                      <span class="logo text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star text-gray-200"></i>
+                      </span>
+                    </span>
+                    <span class="text-gray-400 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"></span>
+                      &nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price: 
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full rounded-md mt-10 block bg-[#218225] text-[#fff] py-4 uppercase"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+          <div class="mt-8 product sm:mt-0">
+            <div class="pb-10 shadow-md">
+              <img
+                class="rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt=""
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo">
+                      <span class="logo text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star text-gray-200"></i>
+                      </span>
+                    </span>
+                    <span class="text-gray-400 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"></span>
+                      &nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price: 
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full rounded-md mt-10 block bg-[#218225] text-[#fff] py-4 uppercase"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!--  TWO BUTTON CARD -->
+          <div class="mt-8 sm:mt-0 product">
+            <div class="pb-10 shadow-md">
+              <img
+                class=" rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt="Egg"
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo text-xl">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star text-gray-200"></i>
+                    </span>
+                    <span class="text-gray-700 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"
+                      >&nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price:
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <div class="grid grid-cols-3 mt-10">
+                  <button class="text-4xl rounded-md bg-[#fff] border border-[#218225] text-[#218225]">
+                    <i class="fa-sharp fa-solid fa-minus"></i>
+                  </button>
+                  <div
+                    class="self-center text-5xl justify-self-center rounded-md"
+                  >
+                    <p>3</p>
+                  </div>
+                  <button
+                    class="text-4xl py-2 rounded-md -center bg-[#218225] text-[#fff]"
+                  >
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 product sm:mt-0">
+            <div class="pb-10 shadow-md">
+              <img
+                class="rounded-t-2xl mb-7"
+                src="./images/egg.png"
+                alt=""
+              />
+              <div class="px-4">
+                <div class="flex justify-between items-center pb-7">
+                  <p class="font-700 text-4xl">Eggs</p>
+                  <div class="">
+                    <span class="logo">
+                      <span class="logo text-xl">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star text-gray-200"></i>
+                      </span>
+                    </span>
+                    <span class="text-gray-400 text-xl">243</span>
+                  </div>
+                </div>
+                <ul class="flex flex-col gap-5">
+                  <li class="text-gray-700">
+                    Origin:
+                    <span class="font-semibold text-[#191819]">&nbsp;Nigeria</span>
+                  </li>
+                  <li class="text-gray-700">
+                    Description:
+                    <span class="text-[#191819] font-semibold"></span>
+                      &nbsp;Edible Natural color, Grade A</span
+                    >
+                  </li>
+                  <li class="text-gray-700">
+                    Price: 
+                    <span class="text-2xl text-[#C89200]">&nbsp;#1,200/Crate</span>
+                  </li>
+                </ul>
+                <button
+                  class="w-full rounded-md mt-10 block bg-[#218225] text-[#fff] py-4 uppercase"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </section>
-    <section class="mt-12">
-      <p>hddjdjdjdj</p>
-    </section>
+        <p class="mt-8 text-[#1A78C2]">Check out all 12334 customer reviews</p>
+      </section>
+      <section class="mt-12"></section>
     </main>
-    
+
     <script src="script.js"></script>
   </body>
 </html>
-
-
 
 <!-- <section class="prose">
         <h1>dhdhdhdhd</h1>

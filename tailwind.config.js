@@ -7,6 +7,12 @@ module.exports = {
       backgroundImage: {
         "custom-image": "url('./images/img1.png')",
       },
+      justifySelf: {
+        start: "start",
+        end: "end",
+        center: "center",
+        stretch: "stretch",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
