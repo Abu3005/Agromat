@@ -1421,6 +1421,11 @@ video {
   padding-bottom: 0.625rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1524,6 +1529,10 @@ video {
 
 .leading-7 {
   line-height: 1.75rem;
+}
+
+.leading-\[1\.6\] {
+  line-height: 1.6;
 }
 
 .text-\[\#090913\] {
@@ -1741,6 +1750,11 @@ video {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
