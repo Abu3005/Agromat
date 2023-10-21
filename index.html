@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth xl:text-lg">
+<html lang="en" class="scroll-smooth md:text-sm md:leading-[1.6]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,26 +9,14 @@
     <link href="fontawesome/css/all.css" rel="stylesheet" />
   </head>
 
-  <!-- body > *:not(#loading) {
-  filter: blur(3px);
-}git 
-<div>Some DIV.</div>
-<div id="loading">Loading DIV
-    <div style='padding:15px;'>Some other DIV inside loading div.</div>
-</div>
-<div>Some other DIV.</div>
-<p>A paragraph.</p> -->
-
   <body
     class="body relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
   >
     <header
-      class="disap head w-full h-24 bg-white py-6 px-5 z-50 fixed shadow-lg"
+      class="head w-full h-20 bg-white flex items-center justify-center px-5 z-50 fixed shadow-lg"
     >
-      <nav class="flex justify-between items-center">
-        <p class="text-[#218225] logo xl:text-4xl lg:text-3xl md:text-2xl">
-          Agromart
-        </p>
+      <nav class="flex justify-between items-center w-full">
+        <p class="text-[#218225] logo md:text-2xl">Agromart</p>
         <!-- Dark and Light Mode -->
         <div class="flex justify-center items-center">
           <input id="k" type="checkbox" class="hidden" />
@@ -47,8 +35,8 @@
         </div>
         <div class="links gap-5 md-gap-6 lg:gap-8 xl:gap-20 items-center flex">
           <ul class="lg:flex md:gap-3 lg:gap-6 xl:gap-12 hidden">
-            <li><a href="">Home</a></li>
-            <li><a href="">About us</a></li>
+            <li><a id="in-progress" href="">Home</a></li>
+            <li><a href="about.html">About us</a></li>
             <li>
               <select name="" id="">
                 <option value="">Services</option>
@@ -57,7 +45,7 @@
                 <option value="">C</option>
               </select>
             </li>
-            <li><a href="">Products</a></li>
+            <li><a id="in-progress" href="">Products</a></li>
           </ul>
           <ul
             class="sm:flex gap-4 hidden justify-between items-center md:gap-3 lg:gap-5 lx:gap-6 relative"
@@ -98,14 +86,14 @@
               <span class="inline-block text-xl">Cart</span>
             </li>
             <li
-              class="text-[#218225] lg:py-3 lg:px-6 py-2 px-4 rounded-sm border border-1 border-[#218225]"
+              class="text-[#218225] py-2 px-4 rounded-sm border border-1 border-[#218225]"
             >
-              <a href="">Sign In</a>
+              <a id="in-progress" href="">Sign In</a>
             </li>
             <li
-              class="bg-[#218225] text-white lg:py-3 lg:px-6 py-2 px-4 rounded-smborder border-1 border-[#218225]"
+              class="bg-[#218225] text-white py-2 px-4 rounded-smborder border-1 border-[#218225]"
             >
-              <a href="">Sign Up</a>
+              <a id="in-progress" href="">Sign Up</a>
             </li>
           </ul>
           <ul class="nav-logo flex flex-col gap-1 lg:hidden">
@@ -118,55 +106,62 @@
     </header>
     <!-- OVERLAY -->
     <div
-      id="blur"
-      class="hidden fixed over h-screen w-[70vw] bg-white text-[#218225] justify-center items-center z-50"
+      id="side-bar"
+      class="fixed hidden over h-screen w-screen text-[#218225] z-50"
     >
-      <i class="times fa-solid fa-xmark absolute text-2xl right-10 top-10"></i>
-      <ul
-        class="flex flex-col text-center justify-center gap-10 md:text-3xl text-2xl"
-      >
-        <li>
-          <p class="text-[#218225] logo font-bold xl:text-5xl text-4xl">
-            Agromart
-          </p>
-        </li>
-        <li>
-          <a
-            class="top px-4 py-1 hover:bg-[#218225] shadow-zinc-300 hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
-            href="#about"
-            >About</a
-          >
-        </li>
-        <li>
-          <a
-            class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-            href="#feature"
-            >Features</a
-          >
-        </li>
-        <li>
-          <a
-            class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-            href="#choice"
-            >Choice</a
-          >
-        </li>
-        <li>
-          <a
-            class="top px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-            href="#contact"
-            >Contacts</a
-          >
-        </li>
-        <li>
-          <a
-            class="bg-[#218225] text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
-            href=""
-            >Register</a
-          >
-        </li>
-      </ul>
+      <div class="float-right w-[40vw] h-full bg-red-600">
+        <div class="flex w-full h-full bg-white justify-center items-center">
+          <i class="times fa-solid fa-xmark absolute text-2xl right-10 top-10">
+          </i>
+          <ul class="flex flex-col text-center justify-center gap-10">
+            <li>
+              <p class="text-[#218225] logo font-bold xl:text-5xl text-2xl">
+                Agromart
+              </p>
+            </li>
+            <li>
+              <a
+                class="side-link px-4 py-1 hover:bg-[#218225] shadow-zinc-300 hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+                href="about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+                href="#feature"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="in-progress"
+                class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+                href="#choice"
+                >Choice</a
+              >
+            </li>
+            <li>
+              <a
+                id="in-progress"
+                class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+                href="#contact"
+                >Contacts</a
+              >
+            </li>
+            <li>
+              <a
+                id="in-progress"
+                class="bg-[#218225] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
+                href=""
+                >Register</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
     <main class="disap">
       <section
         id="section-1"
@@ -181,13 +176,9 @@
               Connect you to fresh, local produce
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, aperiam, aliquam iste, dicta officiis quod vitae
-              ducimus modi debitis esse asperiores? Corrupti sunt magnam
-              molestiae delectus culpa itaque maxime. Fugiat necessitatibus quis
-              natus. A totam dolores illum aliquam voluptates corporis magnam
-              cum, aut voluptas error necessitatibus delectus provident nostrum
-              molestiae.
+              Our platform connects farmers and consumers for fresh, sustainable
+              produce. Shop with us to support local farmers and enjoy
+              high-quality fruits and vegetables straight from the source.
             </p>
             <div class="mt-14">
               <button
@@ -213,9 +204,9 @@
             <ul
               class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
             >
-              <h3 class="lg:text-3xl md:text-2xl logo">Our Mission</h3>
+              <h3 class="md:text-2xl logo">Our Mission</h3>
               <h1
-                class="k text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold"
+                class="m text-[#218225] lg:leading-[46px] md:text-4xl text-2xl font-bold"
               >
                 Create sustainable future
               </h1>
@@ -234,7 +225,7 @@
 
           <div class="w-full md:block flex justify-center items-center">
             <button
-              class="inline px-10 bg-[#218225] text-white py-4 rounded-sm uppercase"
+              class="inline px-8 bg-[#218225] text-white py-3 rounded-sm uppercase"
             >
               Learn More
             </button>
@@ -256,12 +247,11 @@
             <ul
               class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
             >
-              <h3 class="lg:text-3xl md:text-2xl logo">Our Services</h3>
+              <h3 class="md:text-2xl logo">Our Services</h3>
               <h1
-                class="m text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold"
+                class="text-[#218225] md:text-4xl text-2xl font-bold leading-[70px]"
               >
-                Designed for everyone to participate in a healthy food system
-                with ease.
+                For participation in a healthy food system with ease.
               </h1>
               <p>
                 At Agromart, we provide the perfect service for connecting
@@ -279,7 +269,7 @@
 
           <div class="w-full md:block flex justify-center items-center">
             <button
-              class="inline px-10 bg-[#218225] text-white py-4 rounded-sm uppercase"
+              class="inline px-8 bg-[#218225] text-white py-3 rounded-sm uppercase"
             >
               Learn More
             </button>
@@ -350,7 +340,7 @@
       </section>
 
       <section class="mt-24 px-6 sm:px-10">
-        <h1 class="logo lg:text-3xl md:text-2xl">Our Product</h1>
+        <p class="logo md:text-2xl">Our Product</p>
         <p class="pt-5 text-gray-900">
           Discover all categories of our farm-to-table pricing and order fresh
           produce delivered straight to your doorstep, or visit us at the farm
@@ -359,7 +349,7 @@
 
         <!-- ALL CART HERE -->
         <div
-          class="sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 2xl:grid-cols-4 mt-10"
+          class="sm:grid sm:grid-cols-2 sm:gap-y-10 sm:gap-x-5 lg:grid-cols-3 xl:grid-cols-4 mt-10"
         >
           <!-- Each cart -->
           <div class="mt-8 product sm:mt-0">
@@ -367,7 +357,7 @@
               <img class="rounded-t-2xl mb-7" src="./images/egg.png" alt="" />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo">
                       <span class="logo text-xl">
@@ -420,7 +410,7 @@
               />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo text-xl">
                       <i class="fa-solid fa-star"></i>
@@ -478,7 +468,7 @@
               <img class="rounded-t-2xl mb-7" src="./images/egg.png" alt="" />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo">
                       <span class="logo text-xl">
@@ -526,7 +516,7 @@
               <img class="rounded-t-2xl mb-7" src="./images/egg.png" alt="" />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo">
                       <span class="logo text-xl">
@@ -579,7 +569,7 @@
               />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo text-xl">
                       <i class="fa-solid fa-star"></i>
@@ -636,7 +626,7 @@
               <img class="rounded-t-2xl mb-7" src="./images/egg.png" alt="" />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo">
                       <span class="logo text-xl">
@@ -684,7 +674,7 @@
               <img class="rounded-t-2xl mb-7" src="./images/egg.png" alt="" />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo">
                       <span class="logo text-xl">
@@ -737,7 +727,7 @@
               />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo text-xl">
                       <i class="fa-solid fa-star"></i>
@@ -794,7 +784,7 @@
               <img class="rounded-t-2xl mb-7" src="./images/egg.png" alt="" />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo">
                       <span class="logo text-xl">
@@ -842,7 +832,7 @@
               <img class="rounded-t-2xl mb-7" src="./images/egg.png" alt="" />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo">
                       <span class="logo text-xl">
@@ -895,7 +885,7 @@
               />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo text-xl">
                       <i class="fa-solid fa-star"></i>
@@ -953,7 +943,7 @@
               <img class="rounded-t-2xl mb-7" src="./images/egg.png" alt="" />
               <div class="px-4">
                 <div class="flex justify-between items-center pb-7">
-                  <p class="font-700 text-4xl">Eggs</p>
+                  <p class="font-900 text-3xl">Eggs</p>
                   <div class="">
                     <span class="logo">
                       <span class="logo text-xl">
@@ -1083,9 +1073,9 @@
             <ul
               class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
             >
-              <h3 class="lg:text-3xl md:text-2xl logo">Join Us</h3>
+              <h3 class="md:text-2xl logo">Join Us</h3>
               <h1
-                class="k text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold"
+                class="k text-[#218225] lg:leading-[46px] md:text-4xl text-2xl font-bold"
               >
                 Join our professional team
               </h1>
@@ -1104,7 +1094,7 @@
 
           <div class="w-full md:block flex justify-center items-center">
             <button
-              class="inline px-10 bg-[#218225] text-white py-4 rounded-sm uppercase"
+              class="inline px-8 bg-[#218225] text-white py-3 rounded-sm uppercase"
             >
               Join Us
             </button>
@@ -1113,9 +1103,9 @@
       </section>
 
       <section class="mt-24 px-6 sm:px-10">
-        <p class="lg:text-3xl md:text-2xl logo">Join Us</p>
+        <p class="md:text-2xl logo">Join Us</p>
         <p
-          class="k text-[#218225] lg:text-5xl lg:leading-[46px] md:text-4xl text-2xl font-bold mt-8"
+          class="k text-[#218225] lg:leading-[46px] md:text-4xl text-2xl font-bold mt-8"
         >
           Get in touch with us
         </p>

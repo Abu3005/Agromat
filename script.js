@@ -6,32 +6,43 @@ const moder = document.querySelector(".mode");
 const html = document.querySelector("html");
 const icon = document.querySelector(".nav-logo");
 const times = document.querySelector(".times");
-const links = document.querySelectorAll(".top");
+const links = document.querySelectorAll(".side-link");
 const head = document.querySelector(".head");
 const over = document.querySelector(".over");
 const body = document.querySelector(".body");
 const disap = document.querySelectorAll(".disap");
 const main = document.querySelector("main");
+const progress = document.querySelector("#in-progress");
+
+for (var i = 0; i < progress.length; i++) {
+  progress[i].addEventListener("click", function () {
+    over.classList.add("hidden");
+    body.classList.add("all");
+  });
+}
 
 icon.addEventListener("click", function () {
   over.classList.remove("hidden");
-  over.classList.add("flex");
-  body.classList.add("all");
+  over.classList.add("float-right");
+  body.classList.add("blurer");
 });
 
 times.addEventListener("click", function () {
   over.classList.add("hidden");
-  body.classList.remove("all");
+  over.classList.remove("float-right");
+  body.classList.remove("blurer");
 });
 main.addEventListener("click", function () {
   over.classList.add("hidden");
-  body.classList.remove("all");
+  over.classList.remove("float-right");
+  body.classList.remove("blurer");
 });
 
 for (var i = 0; i < links.length; i++) {
   links[i].addEventListener("click", function () {
     over.classList.add("hidden");
-    body.classList.add("all");
+
+    body.classList.remove("blurer");
   });
 }
 function checker() {

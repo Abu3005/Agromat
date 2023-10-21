@@ -6,7 +6,7 @@ body {
   font-family: "Odor Mean Chey", serif;
   color: #c76001;
 }
-.foot {
+.foot .odor {
   font-family: "Odor Mean Chey", serif;
 }
 #section-1 {
@@ -18,6 +18,17 @@ body {
       rgba(201, 251, 183, 0) 120.9%
     ),
     url("./images/img1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about {
+  background-image: url("./images/Banner.png");
+  /* background: linear-gradient(
+      89.15deg,
+      #131f0d 39.5%,
+      rgba(103, 103, 103, 0) 99.27%
+    ),
+    url("./images/img.png"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -46,7 +57,7 @@ body {
     line-height: initial;
   }
 }
-.all > *:not(#blur) {
+.blurer > *:not(#side-bar) {
   filter: blur(3px);
 }
 @media (min-width: 550px) {
