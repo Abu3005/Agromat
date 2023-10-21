@@ -6,6 +6,9 @@ body {
   font-family: "Odor Mean Chey", serif;
   color: #c76001;
 }
+.foot {
+  font-family: "Odor Mean Chey", serif;
+}
 #section-1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     linear-gradient(
@@ -79,4 +82,9 @@ body {
   .customer-2 {
     width: 100%;
   }
+}
+.email-section {
+  background-image: url("./images/bush-road.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

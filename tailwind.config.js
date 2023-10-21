@@ -3,15 +3,25 @@ module.exports = {
   darkMode: "class",
   content: ["*.html"],
   theme: {
+    screens: {
+      esm: "470px",
+      md: "768px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
-      backgroundImage: {
-        "custom-image": "url('./images/img1.png')",
-      },
       justifySelf: {
         start: "start",
         end: "end",
         center: "center",
         stretch: "stretch",
+      },
+      backgroundImage: {
+        t: "url('./images/devon.png')",
+        "footer-texture": "url('/img/footer-texture.png')",
       },
     },
   },
