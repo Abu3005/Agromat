@@ -57,9 +57,10 @@ body {
     line-height: initial;
   }
 }
-.blurer > *:not(#side-bar) {
+.blurer {
   filter: blur(3px);
 }
+
 @media (min-width: 550px) {
   .product {
     display: flex;

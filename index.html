@@ -10,7 +10,7 @@
   </head>
 
   <body
-    class="body relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
+    class="relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
   >
     <header
       class="head w-full h-20 bg-white flex items-center justify-center px-5 z-50 fixed shadow-lg"
@@ -96,73 +96,74 @@
               <a id="in-progress" href="">Sign Up</a>
             </li>
           </ul>
-          <ul class="nav-logo flex flex-col gap-1 lg:hidden">
-            <li class="h-1 w-10 bg-black"></li>
-            <li class="h-1 w-7 bg-black ml-3"></li>
-            <li class="h-1 w-3 bg-black ml-7 bg-custom-image"></li>
-          </ul>
+          <button class="nav-logo">
+            <ul class="flex flex-col gap-1 lg:hidden">
+              <li class="h-1 w-10 bg-black"></li>
+              <li class="h-1 w-7 bg-black ml-3"></li>
+              <li class="h-1 w-3 bg-black ml-7"></li>
+            </ul>
+          </button>
         </div>
       </nav>
     </header>
+
     <!-- OVERLAY -->
-    <div
-      id="side-bar"
-      class="fixed hidden over h-screen w-screen text-[#218225] z-50"
-    >
-      <div class="float-right w-[40vw] h-full bg-red-600">
-        <div class="flex w-full h-full bg-white justify-center items-center">
-          <i class="times fa-solid fa-xmark absolute text-2xl right-10 top-10">
-          </i>
-          <ul class="flex flex-col text-center justify-center gap-10">
-            <li>
-              <p class="text-[#218225] logo font-bold xl:text-5xl text-2xl">
-                Agromart
-              </p>
-            </li>
-            <li>
-              <a
-                class="side-link px-4 py-1 hover:bg-[#218225] shadow-zinc-300 hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
-                href="about.html"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-                href="#feature"
-                >Features</a
-              >
-            </li>
-            <li>
-              <a
-                id="in-progress"
-                class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-                href="#choice"
-                >Choice</a
-              >
-            </li>
-            <li>
-              <a
-                id="in-progress"
-                class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-                href="#contact"
-                >Contacts</a
-              >
-            </li>
-            <li>
-              <a
-                id="in-progress"
-                class="bg-[#218225] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
-                href=""
-                >Register</a
-              >
-            </li>
-          </ul>
-        </div>
+
+    <div id="side-bar" class="over hidden justify-end text-[#218225] z-50">
+      <div
+        class="flex w-[40vw] fixed float-right h-full z-50 bg-white justify-center"
+      >
+        <i class="times fa-solid fa-xmark absolute text-2xl right-10 top-10">
+        </i>
+        <ul class="flex flex-col text-center pt-28 gap-10">
+          <li>
+            <p class="text-[#218225] logo font-bold xl:text-5xl text-2xl">
+              Agromart
+            </p>
+          </li>
+          <li>
+            <a
+              class="side-link px-4 py-1 hover:bg-[#218225] shadow-zinc-300 hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+              href="#feature"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              id="in-progress"
+              class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+              href="#choice"
+              >Choice</a
+            >
+          </li>
+          <li>
+            <a
+              id="in-progress"
+              class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
+              href="#contact"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <a
+              id="in-progress"
+              class="bg-[#218225] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
+              href=""
+              >Register</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
 
-    <main class="disap">
+    <main class="blury">
       <section
         id="section-1"
         class="2xl:px-16 lg:grid lg:grid-cols-2 text-white pb-36 pt-60 px-6 sm:px-10"
