@@ -13,17 +13,20 @@
     class="relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
   >
     <header
-      class="head w-full h-20 bg-white flex items-center justify-center px-5 z-50 fixed shadow-lg"
+      class="head w-full h-20 bg-white flex items-center justify-center px-5 z-50 fixed shadow-lg dark:bg-[#218225] dark:text-white"
     >
       <nav class="flex justify-between items-center w-full">
-        <p class="text-[#218225] logo md:text-2xl">Agromart</p>
+        <a class="text-[#218225] logo md:text-2xl" href="index.html"
+          >Agromart</a
+        >
         <!-- Dark and Light Mode -->
+
         <div class="flex justify-center items-center">
-          <input id="k" type="checkbox" class="hidden" />
-          <span class="pr-2 text-xs text-green-400">Light</span>
-          <label for="k">
+          <input id="check" type="checkbox" class="hidden" />
+          <span class="pr-2 text-xs dark:text-white text-[#c76001]">Light</span>
+          <label for="check">
             <div
-              class="mode h-5 flex items-center pl-1 bg-red-700 w-10 dark:bg-[#090913] rounded-full"
+              class="mode h-5 flex items-center pl-1 bg-[#218225] w-10 dark:bg-[#090913] rounded-full"
             >
               <div
                 type="checkbox"
@@ -31,21 +34,38 @@
               ></div>
             </div>
           </label>
-          <span class="pl-2 text-xs text-[#090913]">Dark</span>
+          <span class="pl-2 text-xs dark:text-black text-black">Dark</span>
         </div>
-        <div class="links gap-5 md-gap-6 lg:gap-8 xl:gap-20 items-center flex">
-          <ul class="lg:flex md:gap-3 lg:gap-6 xl:gap-12 hidden">
-            <li><a id="in-progress" href="">Home</a></li>
-            <li><a href="about.html">About us</a></li>
+
+        <div class="justify-between items-center flex dark:text-white">
+          <ul class="lg:flex pr-5 hidden">
+            <li
+              class="hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
+            >
+              <a id="in-progress" href="index.html">Home</a>
+            </li>
+            <li
+              class="hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
+            >
+              <a href="about.html">About us</a>
+            </li>
             <li>
-              <select name="" id="">
+              <select
+                name=""
+                class="dark:bg-[#218225] hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
+                id=""
+              >
                 <option value="">Services</option>
                 <option value="">A</option>
                 <option value="">B</option>
                 <option value="">C</option>
               </select>
             </li>
-            <li><a id="in-progress" href="">Products</a></li>
+            <li
+              class="hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
+            >
+              <a id="in-progress" class="" href="product.html">Products</a>
+            </li>
           </ul>
           <ul
             class="sm:flex gap-4 hidden justify-between items-center md:gap-3 lg:gap-5 lx:gap-6 relative"
@@ -83,21 +103,21 @@
                 class="absolute bg-[#F76659] text-white text-sm text-center rounded-full h-5 w-5 top-0 left-5"
                 >3</span
               >
-              <span class="inline-block text-xl">Cart</span>
+              <span class="inline-block pl-1 text-xl">Cart</span>
             </li>
             <li
-              class="text-[#218225] py-2 px-4 rounded-sm border border-1 border-[#218225]"
+              class="text-[#218225] py-2 px-4 rounded-sm border border-1 border-[#218225] dark:border-[#FBC533] dark:text-white hover:-translate-y-1 hover:shadow-lg transform duration-300 ease-in-out"
             >
               <a id="in-progress" href="">Sign In</a>
             </li>
             <li
-              class="bg-[#218225] text-white py-2 px-4 rounded-smborder border-1 border-[#218225]"
+              class="bg-[#218225] text-white py-2 px-4 rounded-sm border border-1 border-[#218225] dark:bg-[#FBC533] dark:text-black hover:-translate-y-1 hover:shadow-lg transform duration-300 ease-in-out"
             >
               <a id="in-progress" href="">Sign Up</a>
             </li>
           </ul>
           <button class="nav-logo">
-            <ul class="flex flex-col gap-1 lg:hidden">
+            <ul class="flex flex-col gap-1 pl-4 lg:hidden">
               <li class="h-1 w-10 bg-black"></li>
               <li class="h-1 w-7 bg-black ml-3"></li>
               <li class="h-1 w-3 bg-black ml-7"></li>
@@ -117,47 +137,37 @@
         </i>
         <ul class="flex flex-col text-center pt-28 gap-10">
           <li>
-            <p class="text-[#218225] logo font-bold xl:text-5xl text-2xl">
+            <a
+              href="index.html"
+              class="text-[#218225] logo font-bold xl:text-5xl text-2xl"
+            >
               Agromart
-            </p>
+            </a>
           </li>
-          <li>
-            <a
-              class="side-link px-4 py-1 hover:bg-[#218225] shadow-zinc-300 hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
-              href="about.html"
-              >About</a
-            >
+          <li
+            class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a href="about.html">About</a>
           </li>
-          <li>
-            <a
-              class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-              href="#feature"
-              >Features</a
-            >
+          <li
+            class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a href="#feature">Features</a>
           </li>
-          <li>
-            <a
-              id="in-progress"
-              class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-              href="#choice"
-              >Choice</a
-            >
+          <li
+            class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a id="in-progress" href="#choice">Choice</a>
           </li>
-          <li>
-            <a
-              id="in-progress"
-              class="side-link px-4 py-1 hover:bg-white shadow-zinc-300 hover:text-[#003A79] rounded-md duration-300 ease-in-out hover:-translate-y-1"
-              href="#contact"
-              >Contacts</a
-            >
+          <li
+            class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a id="in-progress" href="#contact">Contacts</a>
           </li>
-          <li>
-            <a
-              id="in-progress"
-              class="bg-[#218225] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
-              href=""
-              >Register</a
-            >
+          <li
+            class="bg-[#218225] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a id="in-progress" href="">Register</a>
           </li>
         </ul>
       </div>
@@ -340,7 +350,7 @@
         </div>
       </section>
 
-      <section class="mt-24 px-6 sm:px-10">
+      <section id="product" class="mt-24 px-6 sm:px-10">
         <p class="logo md:text-2xl">Our Product</p>
         <p class="pt-5 text-gray-900">
           Discover all categories of our farm-to-table pricing and order fresh
@@ -1156,7 +1166,9 @@
           </div>
         </div>
       </section>
-      <section class="mt-24 px-6 sm:px-10 bg-[#131F0D] text-white">
+      <section
+        class="mt-24 px-6 sm:px-10 bg-[#131F0D] dark:bg-black text-white"
+      >
         <div
           class="grid grid-cols-2 lg:grid-cols-6 sm:grid-cols-4 gap-y-6 py-6 sm-py-10"
         >

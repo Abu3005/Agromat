@@ -5,9 +5,14 @@ body {
 .logo {
   font-family: "Odor Mean Chey", serif;
   color: #c76001;
+  font-weight: bold;
 }
 .foot .odor {
   font-family: "Odor Mean Chey", serif;
+}
+.bis:hover,
+.bis:active {
+  box-shadow: inset 0px 0px 4px green;
 }
 #section-1 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
