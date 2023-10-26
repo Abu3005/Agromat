@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" id="form-page">
+<html
+  lang="en"
+  id="form-page"
+  class="scroll-smooth md:text-sm md:leading-[1.6]"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -178,8 +182,21 @@
         </ul>
       </div>
     </div>
-    <main class="blury">
-      <section class="2xl:px-16 pb-36 pt-36 px-6 sm:px-10">
+    <main class="blury pt-20">
+      <div class="about py-20 text-white flex sm:grid grid-cols-2">
+        <div class="px-10 sm:pr-0 flex justify-center items-center">
+          <div>
+            <h1 class="odor text-3xl">Join Our Team</h1>
+            <p class="mt-5">
+              We are passionate about bridging the gap between farmers and
+              customers. Join our team and help us connect farmers directly with
+              customers.
+            </p>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <section class="2xl:px-16 pb-20 pt-36 px-6 sm:px-10">
         <form action="" class="grid grid-cols-1 gap-10" id="myForm">
           <div
             id="form-div1"
@@ -355,32 +372,22 @@
                 />
               </div>
             </div>
-            <div class="flex flex-col gap-5 pt-3">
-              <div>
-                <label for="email" class="text-gray-700 block pb-1"
-                  >Job title</label
-                >
-                <input
-                  type="email"
-                  class="p-2 w-full border rounded"
-                  id="email"
-                  placeholder="e.g example@gmail.com"
-                />
-              </div>
-
-              <div class="hidden">
-                <label class="block pb-1 text-gray-700" for="email"
-                  >Residential address</label
-                >
-                <input
-                  class="p-2 w-full border text- rounded"
-                  type="email"
-                  id="email"
-                  placeholder="No7, akarabata, modakeke"
-                />
-              </div>
+            <div
+              class="pt-6 sm:col-start-2 sm:row-start-2 lg:col-start-3 lg:row-start-1"
+            >
+              <label for="email" class="text-gray-700 block pb-1"
+                >Job title</label
+              >
+              <input
+                type="email"
+                class="p-2 w-full border rounded"
+                id="email"
+                placeholder="e.g example@gmail.com"
+              />
             </div>
-            <div class="row-start-2 col-start-2 col-span-2 mt-6">
+            <div
+              class="lg:col-start-2 lg:col-span-2 mt-6 sm:col-start-2 sm:row-start-3"
+            >
               <label class="block pb-1 text-gray-700" for="email"
                 >Brief description of your role</label
               >

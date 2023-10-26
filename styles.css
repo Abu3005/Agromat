@@ -142,3 +142,16 @@ input::placeholder {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media (min-width: 768px) {
+  .m {
+    text-indent: -9999px;
+    line-height: 0;
+  }
+  .m::after {
+    content: "Sustainable future";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+  }
+}
