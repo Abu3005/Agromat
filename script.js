@@ -1,8 +1,46 @@
-"use strict";
-// mode
-const input = document.querySelector("#check");
+"use script";
+
+const mainPage = document.querySelector("#mainPage");
+const aboutPage = document.querySelector("#about-page");
+
+if (mainPage || aboutPage) {
+  const join = document.querySelectorAll("#join-us");
+  const learn = document.querySelectorAll("#learn-more");
+  // Join us button
+  if (join.length >= 1) {
+    join.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        window.location.href = "join.html";
+      });
+    });
+  }
+
+  /////  To Navigate from main page to about page by learn btn
+  learn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      window.location.href = "about.html";
+    });
+  });
+}
+
+//  To use country code on Form
+const formPage = document.querySelector("#form-page");
+
+if (formPage) {
+  const form = document.querySelector("#myForm");
+  const inputElements = form.querySelectorAll(".intl-tel-input");
+
+  inputElements.forEach((input) => {
+    window.intlTelInput(input, {
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
+  });
+}
+
+// Overlay side bar
+
 const moder = document.querySelector(".mode");
-const html = document.querySelector("html");
 const icon = document.querySelector(".nav-logo");
 const times = document.querySelector(".times");
 const links = document.querySelectorAll(".side-link");
@@ -10,64 +48,62 @@ const head = document.querySelector(".head");
 const over = document.querySelector(".over");
 const blury = document.querySelector(".blury");
 
-const progress = document.querySelector("#in-progress");
-
-// for (var i = 0; i < progress.length; i++) {
-//   progress[i].addEventListener("click", function () {
-//     over.classList.add("hidden");
-//     blury.classList.add("all");
-//   });
-// }
-icon.addEventListener("click", function () {
+function showSidebar() {
   over.classList.remove("hidden");
   over.classList.add("flex");
-  console.log("weldon boy");
   blury.classList.add("blurer");
   head.classList.add("blurer");
-});
-
-blury.addEventListener("click", function () {
+}
+function hideSidebar() {
   over.classList.add("hidden");
   over.classList.remove("flex");
   blury.classList.remove("blurer");
   head.classList.remove("blurer");
-});
-
-times.addEventListener("click", function () {
-  over.classList.add("hidden");
-  over.classList.remove("flex");
-  blury.classList.remove("blurer");
-  head.classList.remove("blurer");
-});
-
-// head.addEventListener("click", function () {
-//   over.classList.add("hidden");
-
-//   blury.classList.remove("blurer");
-//   head.classList.remove("blurer");
-// });
-
-// main.addEventListener("click", function () {
-//   over.classList.add("hidden");
-//   over.classList.remove("float-right");
-//   blury.classList.remove("blurer");
-// });
-
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function () {
-    over.classList.add("hidden");
-    over.classList.remove("flex");
-    head.classList.remove("blurer");
-    blury.classList.remove("blurer");
-  });
 }
 
-//  Mode
+icon.addEventListener("click", showSidebar);
+blury.addEventListener("click", hideSidebar);
+times.addEventListener("click", hideSidebar);
+
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", hideSidebar);
+}
+
+//  Dark Light Mode
+
+const check = document.querySelector("#check");
+// const check2 = document.querySelector("#check2");
+// const check3 = document.querySelector("#check3");
+
+const html = document.querySelector("html");
+
 function checker() {
-  if (input.checked) {
+  if (check.checked) {
     html.classList.add("dark");
   } else {
     html.classList.remove("dark");
   }
 }
-input.addEventListener("click", checker);
+check.addEventListener("click", checker);
+
+// function mode() {
+//   if (check1.checked || check1.checked || check1.checked) {
+//     check1.checked = true;
+//   } else {
+//     html.classList.remove("dark");
+//   }
+// }
+// if (check1.checked) {
+//   check2.checked = true;
+//   check3.checked = true;
+//   html.classList.add("dark");
+// }
+// if (check2.checked) {
+//   check1.checked = true;
+//   check2.checked = true;
+// }
+
+// if (check3.checked) {
+//   check1.checked = true;
+//   check2.checked = true;
+// }

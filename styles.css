@@ -1,6 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Open+Sans&family=Poppins&display=swap");
+@import "intl-tel-input/build/css/intlTelInput.css";
+
+/*********************************/
+/*****phone code width************/
+/*********************************/
+.iti {
+  display: block;
+  width: 100%;
+}
+div.iti_flag-container {
+  border-right: 2px solid red;
+}
+.iti-mobile .iti__country-list {
+  width: 50% !important;
+  margin-left: 150px !important;
+}
+/*********************************/
+/*********************************/
+/*********************************/
+
 body {
   font-family: "Open Sans" sans-serif;
+}
+
+.popin {
+  font-family: "Poppins", sans-serif;
+}
+input option {
+  font-weight: 600;
+}
+
+input::placeholder {
+  font-weight: normal;
 }
 .logo {
   font-family: "Odor Mean Chey", serif;
@@ -31,6 +62,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .about {
   background-image: url("./images/Banner.png");
   /* background: linear-gradient(

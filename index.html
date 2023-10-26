@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth md:text-sm md:leading-[1.6]">
+<html lang="en" class="scroll-smooth md:text-sm md:leading-[1.6]" id="mainPage">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,9 @@
       class="head w-full h-20 bg-white flex items-center justify-center px-5 z-50 fixed shadow-lg dark:bg-[#218225] dark:text-white"
     >
       <nav class="flex justify-between items-center w-full">
-        <a class="text-[#218225] logo-red md:text-2xl" href="index.html"
+        <a
+          class="text-[#218225] dark:text-[#FCB533] logo-red md:text-2xl"
+          href="index.html"
           >Agromart</a
         >
         <!-- Dark and Light Mode -->
@@ -64,7 +66,7 @@
             <li
               class="hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
             >
-              <a id="in-progress" class="" href="product.html">Products</a>
+              <a id="in-progress" class="" href="hold.html">Products</a>
             </li>
           </ul>
           <ul
@@ -126,7 +128,6 @@
         </div>
       </nav>
     </header>
-
     <!-- OVERLAY -->
 
     <div id="side-bar" class="over hidden justify-end text-[#218225] z-50">
@@ -152,22 +153,22 @@
           <li
             class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
           >
-            <a href="#feature">Features</a>
+            <a href="hold.html">Features</a>
           </li>
           <li
             class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
           >
-            <a id="in-progress" href="#choice">Choice</a>
+            <a id="in-progress" href="hold.html">Choice</a>
           </li>
           <li
             class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
           >
-            <a id="in-progress" href="#contact">Contacts</a>
+            <a id="in-progress" href="hold.html">Contacts</a>
           </li>
           <li
             class="bg-[#218225] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
           >
-            <a id="in-progress" href="">Register</a>
+            <button id="join-us">Join Us</button>
           </li>
         </ul>
       </div>
@@ -192,11 +193,12 @@
               high-quality fruits and vegetables straight from the source.
             </p>
             <div class="mt-14">
-              <button
+              <a
+                href="hold.html"
                 class="xl:px-10 md:uppercase sm:px-7 sm:py-3 px-4 py-2.5 rounded-sm bg-white text-[#2A303E] leading-7"
               >
                 Shop Our Product
-              </button>
+              </a>
               <button
                 class="xl:ml-8 ml-1 sm:ml-4 xl:px-10 xl:py-4 sm:px-7 sm:py-3 px-4 py-2.5 md:uppercase rounded-sm bg-[#FBC533] text-[#181C23] leading-7"
               >
@@ -236,6 +238,7 @@
 
           <div class="w-full md:block flex justify-center items-center">
             <button
+              id="learn-more"
               class="inline px-8 bg-[#218225] text-white py-3 rounded-sm uppercase"
             >
               Learn More
@@ -280,6 +283,7 @@
 
           <div class="w-full md:block flex justify-center items-center">
             <button
+              id="learn-more"
               class="inline px-8 bg-[#218225] text-white py-3 rounded-sm uppercase"
             >
               Learn More
@@ -1105,6 +1109,7 @@
 
           <div class="w-full md:block flex justify-center items-center">
             <button
+              id="join-us"
               class="inline px-8 bg-[#218225] text-white py-3 rounded-sm uppercase"
             >
               Join Us

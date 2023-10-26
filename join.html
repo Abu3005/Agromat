@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" id="form-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./css/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css"
+    />
+
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+  </head>
+  <body
+    class="relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
+  >
+    <header
+      class="head w-full h-20 bg-white flex items-center justify-center px-5 z-50 fixed shadow-lg dark:bg-[#218225] dark:text-white"
+    >
+      <nav class="flex justify-between items-center w-full">
+        <a
+          class="text-[#218225] dark:text-[#FCB533] logo-red md:text-2xl"
+          href="index.html"
+          >Agromart</a
+        >
+        <!-- Dark and Light Mode -->
+
+        <div class="flex justify-center items-center">
+          <input id="check" type="checkbox" class="hidden" />
+          <span class="pr-2 text-xs dark:text-white text-[#c76001]">Light</span>
+          <label for="check">
+            <div
+              class="mode h-5 flex items-center pl-1 bg-[#218225] w-10 dark:bg-[#090913] rounded-full"
+            >
+              <div
+                type="checkbox"
+                class="dot shadow-lg h-4 w-4 bg-white transform duration-300 ease-in-out rounded-full"
+              ></div>
+            </div>
+          </label>
+          <span class="pl-2 text-xs dark:text-black text-black">Dark</span>
+        </div>
+
+        <div class="justify-between items-center flex dark:text-white">
+          <ul class="lg:flex pr-5 hidden">
+            <li
+              class="hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
+            >
+              <a id="in-progress" href="index.html">Home</a>
+            </li>
+            <li
+              class="hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
+            >
+              <a href="about.html">About us</a>
+            </li>
+            <li>
+              <select
+                name=""
+                class="dark:bg-[#218225] hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
+                id=""
+              >
+                <option value="">Services</option>
+                <option value="">A</option>
+                <option value="">B</option>
+                <option value="">C</option>
+              </select>
+            </li>
+            <li
+              class="hover:text-[#218225] bis px-4 py-2 transform duration-300 ease-in-out rounded-sm"
+            >
+              <a id="in-progress" class="" href="hold.html">Products</a>
+            </li>
+          </ul>
+          <ul
+            class="sm:flex gap-4 hidden justify-between items-center md:gap-3 lg:gap-5 lx:gap-6 relative"
+          >
+            <li class="">
+              <svg
+                class="inline-block"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_153_840)">
+                  <path
+                    d="M30.284 5.436C29.909 4.98592 29.4394 4.62393 28.9087 4.37575C28.378 4.12757 27.7992 3.99929 27.2133 4H5.656L5.6 3.532C5.4854 2.55922 5.01785 1.66231 4.28599 1.0113C3.55413 0.360298 2.60884 0.000455725 1.62933 0L1.33333 0C0.979711 0 0.640573 0.140476 0.390524 0.390524C0.140476 0.640573 0 0.979711 0 1.33333C0 1.68696 0.140476 2.02609 0.390524 2.27614C0.640573 2.52619 0.979711 2.66667 1.33333 2.66667H1.62933C1.95591 2.66671 2.27112 2.78661 2.51516 3.00362C2.75921 3.22063 2.91512 3.51967 2.95333 3.844L4.788 19.444C4.97847 21.0664 5.75797 22.5624 6.97854 23.648C8.19912 24.7337 9.77581 25.3334 11.4093 25.3333H25.3333C25.687 25.3333 26.0261 25.1929 26.2761 24.9428C26.5262 24.6928 26.6667 24.3536 26.6667 24C26.6667 23.6464 26.5262 23.3072 26.2761 23.0572C26.0261 22.8071 25.687 22.6667 25.3333 22.6667H11.4093C10.5841 22.6643 9.77973 22.4068 9.10658 21.9294C8.43343 21.452 7.92442 20.7781 7.64933 20H23.5427C25.1057 20.0001 26.6191 19.451 27.8184 18.4486C29.0177 17.4462 29.8267 16.0543 30.104 14.516L31.1507 8.71067C31.2551 8.13468 31.2317 7.54276 31.0819 6.97685C30.9321 6.41094 30.6597 5.8849 30.284 5.436ZM28.5333 8.23733L27.4853 14.0427C27.3188 14.9667 26.8326 15.8027 26.1118 16.4043C25.391 17.0059 24.4815 17.3348 23.5427 17.3333H7.22533L5.97067 6.66667H27.2133C27.4092 6.6655 27.6029 6.70749 27.7807 6.78967C27.9585 6.87185 28.116 6.9922 28.242 7.14214C28.368 7.29209 28.4595 7.46796 28.5098 7.65725C28.5602 7.84654 28.5682 8.04459 28.5333 8.23733Z"
+                    fill="#3A4F39"
+                  />
+                  <path
+                    d="M9.33365 32.0008C10.8064 32.0008 12.0003 30.8069 12.0003 29.3341C12.0003 27.8614 10.8064 26.6675 9.33365 26.6675C7.8609 26.6675 6.66699 27.8614 6.66699 29.3341C6.66699 30.8069 7.8609 32.0008 9.33365 32.0008Z"
+                    fill="#3A4F39"
+                  />
+                  <path
+                    d="M22.6667 32.0008C24.1394 32.0008 25.3333 30.8069 25.3333 29.3341C25.3333 27.8614 24.1394 26.6675 22.6667 26.6675C21.1939 26.6675 20 27.8614 20 29.3341C20 30.8069 21.1939 32.0008 22.6667 32.0008Z"
+                    fill="#3A4F39"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_153_840">
+                    <rect width="32" height="32" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span
+                class="absolute bg-[#F76659] text-white text-sm text-center rounded-full h-5 w-5 top-0 left-5"
+                >3</span
+              >
+              <span class="inline-block pl-1 text-xl">Cart</span>
+            </li>
+            <li
+              class="text-[#218225] py-2 px-4 rounded-sm border border-1 border-[#218225] dark:border-[#FBC533] dark:text-white hover:-translate-y-1 hover:shadow-lg transform duration-300 ease-in-out"
+            >
+              <a id="in-progress" href="">Sign In</a>
+            </li>
+            <li
+              class="bg-[#218225] text-white py-2 px-4 rounded-sm border border-1 border-[#218225] dark:bg-[#FBC533] dark:text-black hover:-translate-y-1 hover:shadow-lg transform duration-300 ease-in-out"
+            >
+              <a id="in-progress" href="">Sign Up</a>
+            </li>
+          </ul>
+          <button class="nav-logo">
+            <ul class="flex flex-col gap-1 pl-4 lg:hidden">
+              <li class="h-1 w-10 bg-black"></li>
+              <li class="h-1 w-7 bg-black ml-3"></li>
+              <li class="h-1 w-3 bg-black ml-7"></li>
+            </ul>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- OVERLAY -->
+
+    <div id="side-bar" class="over hidden justify-end text-[#218225] z-50">
+      <div
+        class="flex w-[40vw] fixed float-right h-full z-50 bg-white justify-center"
+      >
+        <i class="times fa-solid fa-xmark absolute text-2xl right-10 top-10">
+        </i>
+        <ul class="flex flex-col text-center pt-28 gap-10">
+          <li>
+            <a
+              href="index.html"
+              class="text-[#218225] logo font-bold xl:text-5xl text-2xl"
+            >
+              Agromart
+            </a>
+          </li>
+          <li
+            class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a href="about.html">About</a>
+          </li>
+          <li
+            class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a href="#hold">Features</a>
+          </li>
+          <li
+            class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a id="in-progress" href="hold.html">Choice</a>
+          </li>
+          <li
+            class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <a id="in-progress" href="hold.html">Contacts</a>
+          </li>
+          <li
+            class="bg-[#218225] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
+          >
+            <button id="#" href="">Join Us</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <main class="blury">
+      <section class="2xl:px-16 pb-36 pt-36 px-6 sm:px-10">
+        <form action="" class="grid grid-cols-1 gap-10" id="myForm">
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+              Personal Information
+            </p>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3 px-10 sm:px-0">
+              <div>
+                <label for="name" class="text-gray-700 pb-1 block"
+                  >Full name</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="name"
+                  placeholder="First, second and last name"
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="phone"
+                  >Phone number</label
+                >
+                <input
+                  class="p-2 border w-full rounded intl-tel-input"
+                  id="phone1"
+                  type="tel"
+                  placeholder="7068086221"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-5 pt-3 px-10 sm:px-0 sm:col-start-2 lg:col-start-3"
+            >
+              <div>
+                <label for="email" class="text-gray-700 block pb-1"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="p-2 w-full border rounded"
+                  id="email"
+                  placeholder="e.g example@gmail.com"
+                />
+              </div>
+
+              <div class="">
+                <label class="block pb-1 text-gray-700" for="email"
+                  >Residential address</label
+                >
+                <input
+                  class="p-2 w-full border text- rounded"
+                  type="email"
+                  id="email"
+                  placeholder="No7, akarabata, modakeke"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <div>
+              <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+                Education
+              </p>
+              <div class="flex mt-2">
+                <img
+                  class="mt-2 sm:h-24 md:h-full"
+                  src="./images/file.png"
+                  alt=""
+                />
+                <div class="ml-3 mt-5">
+                  <p class="pb-2 pl-3">
+                    Upload proof for highest level of education
+                  </p>
+                  <label
+                    for="file"
+                    class="ml-3 py-1.5 px-3 text-sm rounded border text-[#218225] border-[#218225]"
+                    >Upload document</label
+                  >
+                  <br />
+                  <input type="file" name="prove" id="file" class="hidden" />
+                  <span class="text-xs block pt-2 pl-3 text-red-600"
+                    >Jpg,Png,Pdf (less than 5mb)</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3 px-10 sm:px-0">
+              <div>
+                <label for="name" class="text-gray-700 pb-1 block"
+                  >Highest level of Education</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="name"
+                  placeholder=""
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="phone"
+                  >Graduation date</label
+                >
+                <input
+                  class="p-2 border w-full rounded"
+                  id="grad-date"
+                  type="date"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-5 pt-3 px-10 sm:px-0 sm:col-start-2 lg:col-start-3"
+            >
+              <div>
+                <label for="email" class="text-gray-700 block pb-1"
+                  >Name of institution</label
+                >
+                <input
+                  type="institution"
+                  class="p-2 w-full border rounded"
+                  id="institution"
+                  placeholder="institution name"
+                />
+              </div>
+
+              <div class="">
+                <label class="block pb-1 text-gray-700" for="email">City</label>
+                <input
+                  class="p-2 w-full border text- rounded"
+                  type="email"
+                  id="email"
+                  placeholder="No7, akarabata, modakeke"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+              Relevant Work Experience
+            </p>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3">
+              <div>
+                <label for="name" class="text-gray-700 pb-1 block"
+                  >Company name</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="name"
+                  placeholder="First, second and last name"
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="phone"
+                  >Employment date</label
+                >
+                <input
+                  class="p-2 border w-full rounded"
+                  id="date"
+                  type="date"
+                  placeholder="7068086221"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col gap-5 pt-3">
+              <div>
+                <label for="email" class="text-gray-700 block pb-1"
+                  >Job title</label
+                >
+                <input
+                  type="email"
+                  class="p-2 w-full border rounded"
+                  id="email"
+                  placeholder="e.g example@gmail.com"
+                />
+              </div>
+
+              <div class="hidden">
+                <label class="block pb-1 text-gray-700" for="email"
+                  >Residential address</label
+                >
+                <input
+                  class="p-2 w-full border text- rounded"
+                  type="email"
+                  id="email"
+                  placeholder="No7, akarabata, modakeke"
+                />
+              </div>
+            </div>
+            <div class="row-start-2 col-start-2 col-span-2 mt-6">
+              <label class="block pb-1 text-gray-700" for="email"
+                >Brief description of your role</label
+              >
+              <textarea
+                class="border w-full"
+                name="description"
+                id="discription"
+                cols="30"
+                rows="10"
+                placeholder="No7, akarabata, modakeke"
+              ></textarea>
+            </div>
+          </div>
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+              References
+            </p>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3 px-10 sm:px-0">
+              <div>
+                <label for="name" class="text-gray-700 pb-1 block"
+                  >Reference name</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="name"
+                  placeholder="First, second and last name"
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="phone"
+                  >Reference Phone number</label
+                >
+                <input
+                  class="p-2 border w-full rounded intl-tel-input"
+                  id="phone2"
+                  type="tel"
+                  placeholder="7068086221"
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-5 pt-3 px-10 sm:px-0 sm:col-start-2 lg:col-start-3"
+            >
+              <div>
+                <label for="email" class="text-gray-700 block pb-1"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="p-2 w-full border rounded"
+                  id="email"
+                  placeholder="e.g example@gmail.com"
+                />
+              </div>
+
+              <div class="">
+                <label class="block pb-1 text-gray-700" for="email"
+                  >Residential address</label
+                >
+                <input
+                  class="p-2 w-full border text- rounded"
+                  type="email"
+                  id="email"
+                  placeholder="No7, akarabata, modakeke"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+              Additional Information
+            </p>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3 px-10 sm:px-0">
+              <div>
+                <label for="name" class="text-gray-700 pb-1 block"
+                  >Your proficient language ?</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="name"
+                  placeholder="First, second and last name"
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="phone"
+                  >Can you travel on work basis</label
+                >
+                <select
+                  name="weekend"
+                  class="p-2 w-full border text- rounded"
+                  id="weekend"
+                >
+                  <option vAalue="yes" class="text-gray-400">Yes or No</option>
+                  <option vAalue="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="grid gap-5 pt-3 px-10 sm:px-0 sm:col-start-2 lg:col-start-3"
+            >
+              <div>
+                <label for="email" class="text-gray-700 block pb-1"
+                  >Salary expectation per month?</label
+                >
+                <input
+                  type="email"
+                  class="p-2 w-full border rounded"
+                  id="email"
+                  placeholder="e.g example@gmail.com"
+                />
+              </div>
+
+              <div class="">
+                <label class="block pb-1 text-gray-700" for="weekend"
+                  >Can you work on weekends?</label
+                >
+                <select
+                  name="weekend"
+                  class="p-2 w-full border text- rounded"
+                  id="weekend"
+                >
+                  <option vAalue="yes" class="text-gray-400">Yes or No</option>
+                  <option vAalue="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="h-40 relative">
+            <button
+              class="absolute right-0 bottom-0 sm:px-20 px-14 py-3 bg-[#218225] text-white sm:py-4 border rounded"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- footer -->
+      <!-- footer -->
+      <!-- footer -->
+      <!-- footer -->
+      <!-- footer -->
+      <!-- footer -->
+      <!-- footer -->
+      <!-- footer -->
+      <section class="px-6 sm:px-10 bg-[#131F0D] dark:bg-black text-white">
+        <div
+          class="grid grid-cols-2 lg:grid-cols-6 sm:grid-cols-4 gap-y-6 py-6 sm-py-10"
+        >
+          <div class="col-span-2">
+            <h1 class="foot text-2xl">Agromart</h1>
+            <p class="text-gray-700 mt-4 pr-7">
+              You are just one step away from revolutionizing the way you shop
+              for fresh, locally sourced produce with our online platform that
+              connects farmers directly to customers.
+            </p>
+          </div>
+          <ul class="text-gray-700 flex flex-col gap-5 font-medium">
+            <li class="text-gray-200">Links</li>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Products</li>
+            <li>Contact Us</li>
+            <li>Join Us</li>
+          </ul>
+          <ul class="text-gray-700 flex flex-col gap-5 font-medium">
+            <li class="text-gray-200">Services</li>
+            <li>Partner With Us</li>
+            <li>Consultations</li>
+            <li>Rent Farm Equipments</li>
+            <li>Services</li>
+          </ul>
+          <div class="col-span-2 sm:col-span-3 md:col-span-2">
+            <p class="font-bold">Subscribe to our Newsletter</p>
+            <form action="">
+              <label for="Subscribe" class="text-gray-500"
+                >Be the first to know the latest farm trends</label
+              ><br />
+              <input
+                class="px-3.5 py-1.5 mt-2 text-black rounded-sm"
+                placeholder="Email address"
+                id="subscribe"
+                type="text"
+                name="subscribe"
+                required
+              />
+              <button
+                class="bg-green-600 rounded-sm inline-block px-3.5 py-1.5"
+                aria-placeholder="Email address"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <footer
+          class="text-gray-300 border-t-gray-300 border-t-2 flex justify-between items-center h-16 text-sm"
+        >
+          <p class="">&copy;<span>2023</span> Agromart - All rights reserved</p>
+          <ul class="flex gap-5">
+            <li>Terms &amp; Conditions</li>
+            <li>Cookies</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </footer>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
