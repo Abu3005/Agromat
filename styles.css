@@ -38,6 +38,10 @@ input::placeholder {
   color: #c76001;
   font-weight: bold;
 }
+.cat {
+  font-family: "Odor Mean Chey", serif;
+  color: #c76001;
+}
 .logo-red {
   font-family: "Odor Mean Chey", serif;
   color: #218225;
@@ -136,6 +140,10 @@ input::placeholder {
   .customer-2 {
     width: 100%;
   }
+  .former {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 .email-section {
   background-image: url("./images/bush-road.png");
@@ -154,4 +162,8 @@ input::placeholder {
     display: block;
     line-height: initial;
   }
+}
+
+.take {
+  accent-color: green;
 }

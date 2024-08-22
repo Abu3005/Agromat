@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agromart</title>
+    <link rel="icon" href="./images/leave.jpeg" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[url('./images/bg-sign-up-in.png')] bg-cover bg-center h-screen text relative"
+  >
+    <a class="text-white py-12 lg:pl-16 md-pl-12 pl-8 md:pl-14 absolute font-bold text-2xl" href="index.html">Agromart</a>
+    
+      
+    </p>
+    <div class="h-full flex justify-center items-center">
+      <form
+        class="bg-white sm:px-10 px-4 max-w-lg rounded-md h-[80%] md:w-[80%] w-[50%] py-7 flex flex-col gap-4"
+      >
+        <div class="font-semibold text-2xl">Sign in</div>
+        <div class="flex flex-col gap-4 rounded-md">
+          <div>
+            <label class="mb-1 inline-block" for="sign-in-email"
+              >Email address</label
+            >
+            <input
+              class="border px-1 rounded-md w-full h-10"
+              type="email"
+              name="sign-in-email"
+              placeholder="Enter your Email "
+            />
+          </div>
+          <div class="rounded-md">
+            <label class="mb-1 inline-block" for="sign-in-password"
+              >Password</label
+            >
+            <div class="relative">
+              <input
+                id="sign-in-password"
+                class="border px-1 rounded-md w-full h-10 pr-10"
+                type="password"
+                name="sign-in-password"
+                placeholder="Enter your password"
+              />
+              <button
+                type="button"
+                onclick="togglePassword()"
+                class="absolute inset-y-0 right-0 flex items-center px-2 text-sm text-gray-600"
+              >
+                <i id="password-icon" class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-md flex flex-col gap-2">
+          <button
+            class="h-10 take text-white bg-[#218225] rounded-md w-full border"
+          >
+            Sign In
+          </button>
+          <div class="flex md:flex-row md:justify-between flex-col">
+            <div>
+              <input
+                class="[#218225] take"
+                type="checkbox"
+                name="remember"
+                id="remember"
+              />
+              <label for="remember">Remember me</label>
+            </div>
+
+            <a class="text-[#C76001]" href="#">Forgotten password ?</a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2 pb-4">
+          <div class="w-full flex">
+            <p class="border h-0 w-full translate-y-3"></p>
+            <p class="px-6">OR</p>
+            <p class="border h-0 w-full translate-y-3"></p>
+          </div>
+          <div class="w-full">
+            <div class="">
+              <a
+                class="border border-[#218225] text-center rounded-md w-full h-10 flex items-center justify-center space-x-2"
+                href="#"
+              >
+                <img
+                  class="max-h-5"
+                  src="./images/Social media logo.png"
+                  alt="Google"
+                />
+                <span class="self-center">Sign in with Google</span>
+              </a>
+            </div>
+          </div>
+          <p class="text-center pt-3">
+            Don't have an account?
+            <a class="text-[#C76001]" href="sign-up.html">Sign up</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

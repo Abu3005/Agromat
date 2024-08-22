@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
   lang="en"
-  class="scroll-smooth md:text-sm md:leading-[1.6]"
+  class="scroll-smooth sm:text-sm md:leading-[1.6]"
   id="about-page"
 >
   <head>
@@ -13,7 +13,6 @@
     <link href="styles.css" rel="stylesheet" />
     <link href="fontawesome/css/all.css" rel="stylesheet" />
   </head>
-
   <body
     id="about"
     class="body relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
@@ -116,12 +115,12 @@
             <li
               class="text-[#218225] py-2 px-4 rounded-sm border border-1 border-[#218225] dark:border-[#FBC533] dark:text-white hover:-translate-y-1 hover:shadow-lg transform duration-300 ease-in-out"
             >
-              <a id="in-progress" href="sign-in.html">Sign In</a>
+              <a id="in-progress" href="">Sign In</a>
             </li>
             <li
               class="bg-[#218225] text-white py-2 px-4 rounded-sm border border-1 border-[#218225] dark:bg-[#FBC533] dark:text-black hover:-translate-y-1 hover:shadow-lg transform duration-300 ease-in-out"
             >
-              <a id="in-progress" href="sign-up.html">Sign Up</a>
+              <a id="in-progress" href="">Sign Up</a>
             </li>
           </ul>
           <button class="nav-logo">
@@ -164,7 +163,7 @@
           <li
             class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
           >
-            <a id="in-progress" href="">Choice</a>
+            <a id="in-progress" href="hold.html">Choice</a>
           </li>
           <li
             class="side-link px-4 py-2 hover:bg-[#218225] hover:text-white rounded-sm duration-300 ease-in-out hover:-translate-y-1"
@@ -180,210 +179,253 @@
       </div>
     </div>
 
+    <!--MAIN-->
     <main class="blury pt-20">
-      <div class="about py-20 text-white flex sm:grid grid-cols-2">
-        <div class="px-10 sm:pr-0 flex justify-center items-center">
-          <div>
-            <h1 class="odor text-3xl">About</h1>
-            <p class="mt-5">
-              We are passionate about bridging the gap between farmers and
-              customers. Join our team and help us connect farmers directly with
-              customers.
-            </p>
+      <section class="mt-20 cart-section md:grid md:grid-cols-7 gap-10 px-10">
+        <div class="child1 col-span-5">
+          <div class="flex justify-between mb-5">
+            <h3 class="cat">Your Order list</h3>
+            <p>3 items in cart</p>
           </div>
-        </div>
-        <div></div>
-      </div>
 
-      <section
-        class="mt-20 px-6 sm:px-10 md:grid sm:grid-cols-2 md:gap-6 lg:gap-8 xl:gap-12"
-      >
-        <div class="md:flex flex-col md:justify-center md:items-center">
-          <div class="flex flex-col">
-            <ul
-              class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
-            >
-              <h3 class="md:text-2xl logo">Our Mission</h3>
-              <h1
-                class="k text-[#218225] lg:leading-[46px] md:text-4xl text-2xl font-bold"
+          <div class="flex flex-col gap-5">
+            <div class="border flex justify-center rounded-md sm:py-0 py-10">
+              <div
+                class="imageAndContentDiv grid sm:grid sm:grid-cols-10 sm:shadow-none shadow-md rounded-md"
               >
-                Create sustainable future
-              </h1>
-              <p>
-                Agromart is on a mission to create a sustainable future by
-                connecting consumers with small-scale farmers. We believe in the
-                power of local food systems to promote healthy eating, support
-                rural communities, and protect our environment.
-              </p>
-              <p>
-                By using our platform, you're joining us in this mission and
-                supporting a better food system for all.
-              </p>
-            </ul>
-          </div>
-
-          <div class="w-full md:block flex justify-center items-center">
-            <button
-              id="learn-more"
-              class="inline px-8 bg-[#218225] text-white py-3 rounded-sm uppercase"
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-        <div class="flex md:order-first justify-center items-center">
-          <img
-            class="mt-16 md:my-0 md:w-[600px]"
-            src="./images/Mission Img.png"
-            alt=""
-          />
-        </div>
-      </section>
-      <section
-        class="mt-20 px-4 sm:px-10 md:grid sm:grid-cols-2 md:gap-6 lg:gap-8 xl:gap-12"
-      >
-        <div class="md:flex flex-col md:justify-center md:items-center">
-          <div class="flex flex-col">
-            <ul
-              class="flex lg:gap-6 gap-5 flex-col justify-center mb-10 lg:mb-16"
-            >
-              <h3 class="md:text-2xl logo">Our Team</h3>
-              <h1
-                class="m text-[#218225] lg:leading-[46px] md:text-4xl text-2xl font-bold"
+                <img
+                  class="rounded-l-md sm:col-span-2"
+                  src="./images/egg.png"
+                  alt="Eggs"
+                />
+                <div class="sm:col-span-5 my-auto px-4">
+                  <div class="flex flex-col gap-3 pt-6 sm:pt-0">
+                    <div class="">
+                      <h3 class="text-2xl font-bold">Beans</h3>
+                      <ul
+                        class="flex sm:gap-2 sm:justify-normal justify-between"
+                      >
+                        <li class="logo">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star text-gray-300"></i>
+                        </li>
+                        <span class="text-gray-300">243</span>
+                      </ul>
+                    </div>
+                    <div>
+                      <p>
+                        <span class="inline-block mr-1 text-gray-300"
+                          >Origin:</span
+                        >Nigeria
+                      </p>
+                      <p class="">
+                        <span class="inline-block mr-1 text-gray-300 min-w-0"
+                          >Description:</span
+                        >Dried Natural color
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col sm:col-span-3 justify-between sm:gap-0 gap-4 p-4"
+                >
+                  <div class="flex justify-between sm:gap-8 sm:justify-end">
+                    <p class="text-[#C89200]">#2,700</p>
+                    <i class="fa-regular fa-trash-can translate-y-1"></i>
+                  </div>
+                  <div
+                    class="sm:flex sm:justify-end grid grid-cols-3 h-12 sm:mt-0 mt-8"
+                  >
+                    <button
+                      class="sm:py-1 sm:px-7 rounded-md border border-[#218225] text-[#218225]"
+                    >
+                      <i class="fa-solid fa-minus text-lg"></i>
+                    </button>
+                    <span class="sm:px-7 text-center text-3xl">3</span>
+                    <button
+                      class="border sm:py-1 sm:px-7 rounded-md bg-[#218225] text-[#fff]"
+                    >
+                      <i class="fa-solid fa-plus text-lg"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border flex justify-center rounded-md sm:py-0 py-10">
+              <div
+                class="imageAndContentDiv grid sm:grid sm:grid-cols-10 sm:shadow-none shadow-md rounded-md"
               >
-                Meet our awesome team
-              </h1>
-              <p>
-                We are passionate about bridging the gap between farmers and
-                customers. Our team is made up of professionals who are
-                committed to creating a sustainable future for agriculture. From
-                experts in farming techniques to marketing specialists, we have
-                the skills and experience needed to connect farmers with
-                customers and help them succeed. We work closely with our
-                clients to understand their unique needs and goals, and we
-                strive to deliver personalized solutions that meet their
-                expectations. Get to know us and discover how we can help you
-                connect with the right customers and grow your business.
-              </p>
-            </ul>
+                <img
+                  class="rounded-l-md sm:col-span-2"
+                  src="./images/egg.png"
+                  alt="Eggs"
+                />
+                <div class="sm:col-span-5 my-auto px-4">
+                  <div class="flex flex-col gap-3 pt-6 sm:pt-0">
+                    <div class="">
+                      <h3 class="text-2xl font-bold">Beans</h3>
+                      <ul
+                        class="flex sm:gap-2 sm:justify-normal justify-between"
+                      >
+                        <li class="logo">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star text-gray-300"></i>
+                        </li>
+                        <span class="text-gray-300">243</span>
+                      </ul>
+                    </div>
+                    <div>
+                      <p>
+                        <span class="inline-block mr-1 text-gray-300"
+                          >Origin:</span
+                        >Nigeria
+                      </p>
+                      <p class="">
+                        <span class="inline-block mr-1 text-gray-300 min-w-0"
+                          >Description:</span
+                        >Dried Natural color
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col sm:col-span-3 justify-between sm:gap-0 gap-4 p-4"
+                >
+                  <div class="flex justify-between sm:gap-8 sm:justify-end">
+                    <p class="text-[#C89200]">#2,700</p>
+                    <i class="fa-regular fa-trash-can translate-y-1"></i>
+                  </div>
+                  <div
+                    class="sm:flex sm:justify-end grid grid-cols-3 h-12 sm:mt-0 mt-8"
+                  >
+                    <button
+                      class="sm:py-1 sm:px-7 rounded-md border border-[#218225] text-[#218225]"
+                    >
+                      <i class="fa-solid fa-minus text-lg"></i>
+                    </button>
+                    <span class="sm:px-7 text-center text-3xl">3</span>
+                    <button
+                      class="border sm:py-1 sm:px-7 rounded-md bg-[#218225] text-[#fff]"
+                    >
+                      <i class="fa-solid fa-plus text-lg"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border flex justify-center rounded-md sm:py-0 py-10">
+              <div
+                class="imageAndContentDiv grid sm:grid sm:grid-cols-10 sm:shadow-none shadow-md rounded-md"
+              >
+                <img
+                  class="rounded-l-md sm:col-span-2"
+                  src="./images/egg.png"
+                  alt="Eggs"
+                />
+                <div class="sm:col-span-5 my-auto px-4">
+                  <div class="flex flex-col gap-3 pt-6 sm:pt-0">
+                    <div class="">
+                      <h3 class="text-2xl font-bold">Beans</h3>
+                      <ul
+                        class="flex sm:gap-2 sm:justify-normal justify-between"
+                      >
+                        <li class="logo">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star text-gray-300"></i>
+                        </li>
+                        <span class="text-gray-300">243</span>
+                      </ul>
+                    </div>
+                    <div>
+                      <p>
+                        <span class="inline-block mr-1 text-gray-300"
+                          >Origin:</span
+                        >Nigeria
+                      </p>
+                      <p class="">
+                        <span class="inline-block mr-1 text-gray-300 min-w-0"
+                          >Description:</span
+                        >Dried Natural color
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col sm:col-span-3 justify-between sm:gap-0 gap-4 p-4"
+                >
+                  <div class="flex justify-between sm:gap-8 sm:justify-end">
+                    <p class="text-[#C89200]">#2,700</p>
+                    <i class="fa-regular fa-trash-can translate-y-1"></i>
+                  </div>
+                  <div
+                    class="sm:flex sm:justify-end grid grid-cols-3 h-12 sm:mt-0 mt-8"
+                  >
+                    <button
+                      class="sm:py-1 sm:px-7 rounded-md border border-[#218225] text-[#218225]"
+                    >
+                      <i class="fa-solid fa-minus text-lg"></i>
+                    </button>
+                    <span class="sm:px-7 text-center text-3xl">3</span>
+                    <button
+                      class="border sm:py-1 sm:px-7 rounded-md bg-[#218225] text-[#fff]"
+                    >
+                      <i class="fa-solid fa-plus text-lg"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
 
-          <div class="w-full md:block flex justify-center items-center">
-            <button
-              id="learn-more"
-              class="inline px-8 bg-[#218225] text-white py-3 rounded-sm uppercase"
-            >
-              Learn More
-            </button>
-          </div>
-        </div>
-        <div class="flex justify-center items-center">
-          <img
-            class="mt-16 md:my-0 md:w-[600px]"
-            src="./images/Img-lay.png"
-            alt=""
-          />
-        </div>
-      </section>
-      <section class="mt-24 px-4 sm:px-10">
-        <h3 class="lg:text-3xl md:text-2xl logo pb-5 border-b-2">
-          Team Member
-        </h3>
-        <div
-          class="pt-5 grid md:grid-cols-4 smallest:grid-cols-2 gap-x-4 gap-y-16"
-        >
-          <div class="pb-2 shadow-md">
-            <img class="rounded-t-lg" src="./images/flower.png" alt="" />
-            <p class="mt-4 px-3 text-[#222124] font-medium">Mayor Mayor</p>
-            <div class="mt-4 px-3 pb-4 flex justify-between items-center">
-              <p class="text-[#222124 ]">CTO of Agromart</p>
-              <div class="text-[#A1A0A3] text-lg">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="pl-2 fa-brands fa-linkedin-in"></i>
-              </div>
+        <div class="child2 col-span-2 mt-10 md:mt-0">
+          <h2 class="cat mb-5">Order Summary</h2>
+          <div class="border rounded-md bg-gray-50">
+            <div class="flex justify-between px-4 py-4">
+              <p>Subtotal</p>
+              <p class="font-semibold">#20,400</p>
             </div>
-          </div>
-          <div class="pb-2 shadow-md">
-            <img class="rounded-t-lg" src="./images/flower.png" alt="" />
-            <p class="mt-4 px-3 text-[#222124] font-medium">Mayor Mayor</p>
-            <div class="mt-4 px-3 pb-4 flex justify-between items-center">
-              <p class="text-[#222124 ]">CTO of Agromart</p>
-              <div class="text-[#A1A0A3] text-lg">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="pl-2 fa-brands fa-linkedin-in"></i>
-              </div>
+            <hr />
+            <div class="flex justify-between px-4 py-4">
+              <p>Task</p>
+              <p class="font-semibold">#0</p>
             </div>
-          </div>
-          <div class="pb-2 shadow-md">
-            <img class="rounded-t-lg" src="./images/flower.png" alt="" />
-            <p class="mt-4 px-3 text-[#222124] font-medium">Mayor Mayor</p>
-            <div class="mt-4 px-3 pb-4 flex justify-between items-center">
-              <p class="text-[#222124 ]">CTO of Agromart</p>
-              <div class="text-[#A1A0A3] text-lg">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="pl-2 fa-brands fa-linkedin-in"></i>
-              </div>
+            <hr />
+            <div class="flex justify-between px-4 py-4">
+              <p>Delivery fee</p>
+              <p class="font-semibold">#2,000</p>
             </div>
-          </div>
-          <div class="pb-2 shadow-md">
-            <img class="rounded-t-lg" src="./images/flower.png" alt="" />
-            <p class="mt-4 px-3 text-[#222124] font-medium">Mayor Mayor</p>
-            <div class="mt-4 px-3 pb-4 flex justify-between items-center">
-              <p class="text-[#222124 ]">CTO of Agromart</p>
-              <div class="text-[#A1A0A3] text-lg">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="pl-2 fa-brands fa-linkedin-in"></i>
-              </div>
+            <hr />
+            <div class="flex justify-between px-4 py-4">
+              <p class="font-bold">Total</p>
+              <p class="font-semibold">#22,400</p>
             </div>
-          </div>
-          <div class="pb-2 shadow-md">
-            <img class="rounded-t-lg" src="./images/flower.png" alt="" />
-            <p class="mt-4 px-3 text-[#222124] font-medium">Mayor Mayor</p>
-            <div class="mt-4 px-3 pb-4 flex justify-between items-center">
-              <p class="text-[#222124 ]">CTO of Agromart</p>
-              <div class="text-[#A1A0A3] text-lg">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="pl-2 fa-brands fa-linkedin-in"></i>
-              </div>
-            </div>
-          </div>
-          <div class="pb-2 shadow-md">
-            <img class="rounded-t-lg" src="./images/flower.png" alt="" />
-            <p class="mt-4 px-3 text-[#222124] font-medium">Mayor Mayor</p>
-            <div class="mt-4 px-3 pb-4 flex justify-between items-center">
-              <p class="text-[#222124 ]">CTO of Agromart</p>
-              <div class="text-[#A1A0A3] text-lg">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="pl-2 fa-brands fa-linkedin-in"></i>
-              </div>
-            </div>
-          </div>
-          <div class="pb-2 shadow-md">
-            <img class="rounded-t-lg" src="./images/flower.png" alt="" />
-            <p class="mt-4 px-3 text-[#222124] font-medium">Mayor Mayor</p>
-            <div class="mt-4 px-3 pb-4 flex justify-between items-center">
-              <p class="text-[#222124 ]">CTO of Agromart</p>
-              <div class="text-[#A1A0A3] text-lg">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="pl-2 fa-brands fa-linkedin-in"></i>
-              </div>
-            </div>
-          </div>
-          <div class="pb-2 shadow-md">
-            <img class="rounded-t-lg" src="./images/flower.png" alt="" />
-            <p class="mt-4 px-3 text-[#222124] font-medium">Mayor Mayor</p>
-            <div class="mt-4 px-3 pb-4 flex justify-between items-center">
-              <p class="text-[#222124 ]">CTO of Agromart</p>
-              <div class="text-[#A1A0A3] text-lg">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="pl-2 fa-brands fa-linkedin-in"></i>
-              </div>
+            <hr />
+            <div class="px-4">
+              <button
+                class="py-3 bg-[#218225] w-full border rounded-md mt-7 text-white mb-4"
+              >
+                Checkout
+              </button>
+              <button
+                class="py-3 text-[#218225] w-full rounded-md mt-4 border-[#218225] border mb-4"
+              >
+                Continue shopping
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- 
-
 
 
 
