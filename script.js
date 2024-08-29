@@ -105,12 +105,12 @@ function togglePassword() {
 
 // To make form required
 
-const form = document.getElementById("myForm");
-const inputs = form.querySelectorAll("input");
+// const form = document.getElementById("myForm");
+// const inputs = form.querySelectorAll("input");
 
-inputs.forEach((input) => {
-  input.setAttribute("required", "required");
-});
+// inputs.forEach((input) => {
+//   input.setAttribute("required", "required");
+// });
 
 // function mode() {
 //   if (check1.checked || check1.checked || check1.checked) {
