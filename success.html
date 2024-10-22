@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" id="">
+<html
+  lang="en"
+  class="scroll-smooth sm:text-sm md:leading-[1.6]"
+  id="about-page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Agromart</title>
+    <link rel="icon" href="./images/leave.jpeg" class="rounded-lg" />
     <link href="./css/output.css" rel="stylesheet" />
     <link href="styles.css" rel="stylesheet" />
     <link href="fontawesome/css/all.css" rel="stylesheet" />
-
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-
   <body
     id="about"
     class="body relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
@@ -169,7 +171,7 @@
             <a id="in-progress" href="hold.html">Contacts</a>
           </li>
           <li
-            class="bg-[#569e58] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
+            class="bg-[#218225] side-link text-white py-3 px-8 rounded-[4px] border border-1 hover:text-white duration-300 ease-in-out hover:-translate-y-1"
           >
             <button id="join-us">Join Us</button>
           </li>
@@ -177,84 +179,224 @@
       </div>
     </div>
 
+    <!--MAIN-->
     <main class="blury pt-20">
-      <div class="about py-10 text-white flex sm:grid grid-cols-3">
-        <div class="px-10 sm:pr-0 flex justify-center items-center col-span-2">
-          <ul class="flex flex-col gap-2 esm:gap-3">
-            <li class="odor text-3xl esm:text-2xl">Our Products</li>
-            <li>
-              Discover all categories of our farm-to-table pricing and order
-              fresh produce delivered straight to your doorstep, or visit us at
-              the farm for a closer look at our sustainable farming practices.
-            </li>
-            <li class="text-[#C76001] text-lg esm:cont">
-              Unable to find, order manually here
-            </li>
-            <li>
-              <button class="bg-white text-black esm:w-36 h-10 w-32 rounded-sm">
-                Order manually
-              </button>
-              <button
-                class="bg-yellow-500 ml-2 sm:ml-4 text-black esm:w-36 h-10 w-32 rounded-sm"
-              >
-                Track Order
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div></div>
-      </div>
+      <section class="mt-20 cart-section md:grid md:grid-cols-7 gap-10 px-10">
+        <div class="child1 col-span-5 border rounded-lg pb-4 px-4">
+          <div class="text-center" style="padding: 20px 50px">
+            <p>Payment is successful</p>
+            <i
+              class="fa-solid fa-circle-check text-green-400 py-6"
+              style="color: #73bd4f; font-size: 72px"
+            ></i>
+            <p>
+              Your payment is successful. Your order
+              <span class="text-[#C89200]">#2994567</span> is confirmed and
+              ready to be delivered.
+            </p>
+          </div>
+          <div class="px-4">
+            <hr />
+          </div>
 
-      <section class="mt-5 px-6 sm:px-10">
-        <div class="my-12 text-center grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          <label
-            for="search"
-            class="text-2xl font-bold text-[#C89200] md:col-span-2 lg:col-span-1"
-            >Explore categories here</label
-          >
-          <input
-            id="search"
-            class="search justify-self-center md:justify-self-end w-[300px] px-3 py-2 rounded-sm border border-[#D0D5DD]"
-            type="text"
-            name="search"
-            placeholder="Search any product here"
-          />
-          <select
-            name=""
-            class="md:justify-self-start justify-self-center -translate-x-2 sell ml-5 border max-w-[200px] rounded-sm py-2 px-2 text-[#0D3C61] border-[#0D3C61]"
-            id="cate"
-          >
-            <option value="all">Sort: All categories</option>
-          </select>
+          <p class="text-center py-4 font-semibold text-gray-900">
+            Order details
+          </p>
+          <div class="flex flex-col gap-5">
+            <div class="border flex justify-center rounded-md sm:py-0 py-10">
+              <div
+                class="imageAndContentDiv grid sm:grid sm:grid-cols-10 sm:shadow-none shadow-md rounded-md"
+              >
+                <img
+                  class="rounded-l-md sm:col-span-2"
+                  src="./images/egg.png"
+                  alt="Eggs"
+                />
+                <div class="sm:col-span-5 my-auto px-4">
+                  <div class="flex flex-col gap-3 pt-6 sm:pt-0">
+                    <div class="">
+                      <h3 class="text-2xl font-bold">Beans</h3>
+                      <ul
+                        class="flex sm:gap-2 sm:justify-normal justify-between"
+                      >
+                        <li class="logo">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star text-gray-300"></i>
+                        </li>
+                        <span class="text-gray-300">243</span>
+                      </ul>
+                    </div>
+                    <div>
+                      <p>
+                        <span class="inline-block mr-1 text-gray-300"
+                          >Origin:</span
+                        >Nigeria
+                      </p>
+                      <p class="">
+                        <span class="inline-block mr-1 text-gray-300 min-w-0"
+                          >Description:</span
+                        >Dried Natural color
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col sm:col-span-3 justify-between sm:gap-0 gap-4 p-4"
+                >
+                  <div class="flex justify-between sm:gap-8 sm:justify-end">
+                    <p class="text-[#C89200]">#2,700</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border flex justify-center rounded-md sm:py-0 py-10">
+              <div
+                class="imageAndContentDiv grid sm:grid sm:grid-cols-10 sm:shadow-none shadow-md rounded-md"
+              >
+                <img
+                  class="rounded-l-md sm:col-span-2"
+                  src="./images/egg.png"
+                  alt="Eggs"
+                />
+                <div class="sm:col-span-5 my-auto px-4">
+                  <div class="flex flex-col gap-3 pt-6 sm:pt-0">
+                    <div class="">
+                      <h3 class="text-2xl font-bold">Beans</h3>
+                      <ul
+                        class="flex sm:gap-2 sm:justify-normal justify-between"
+                      >
+                        <li class="logo">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star text-gray-300"></i>
+                        </li>
+                        <span class="text-gray-300">243</span>
+                      </ul>
+                    </div>
+                    <div>
+                      <p>
+                        <span class="inline-block mr-1 text-gray-300"
+                          >Origin:</span
+                        >Nigeria
+                      </p>
+                      <p class="">
+                        <span class="inline-block mr-1 text-gray-300 min-w-0"
+                          >Description:</span
+                        >Dried Natural color
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col sm:col-span-3 justify-between sm:gap-0 gap-4 p-4"
+                >
+                  <div class="flex justify-between sm:gap-8 sm:justify-end">
+                    <p class="text-[#C89200]">#2,700</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border flex justify-center rounded-md sm:py-0 py-10">
+              <div
+                class="imageAndContentDiv grid sm:grid sm:grid-cols-10 sm:shadow-none shadow-md rounded-md"
+              >
+                <img
+                  class="rounded-l-md sm:col-span-2"
+                  src="./images/egg.png"
+                  alt="Eggs"
+                />
+                <div class="sm:col-span-5 my-auto px-4">
+                  <div class="flex flex-col gap-3 pt-6 sm:pt-0">
+                    <div class="">
+                      <h3 class="text-2xl font-bold">Beans</h3>
+                      <ul
+                        class="flex sm:gap-2 sm:justify-normal justify-between"
+                      >
+                        <li class="logo">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star text-gray-300"></i>
+                        </li>
+                        <span class="text-gray-300">243</span>
+                      </ul>
+                    </div>
+                    <div>
+                      <p>
+                        <span class="inline-block mr-1 text-gray-300"
+                          >Origin:</span
+                        >Nigeria
+                      </p>
+                      <p class="">
+                        <span class="inline-block mr-1 text-gray-300 min-w-0"
+                          >Description:</span
+                        >Dried Natural color
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col sm:col-span-3 justify-between sm:gap-0 gap-4 p-4"
+                >
+                  <div class="flex justify-between sm:gap-8 sm:justify-end">
+                    <p class="text-[#C89200]">#2,700</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div
-          id="product-container"
-          class="sm:grid sm:grid-cols-2 sm:gap-y-10 sm:gap-x-5 lg:grid-cols-3 xl:grid-cols-4 mt-10 lg:px-0 md:px-14 sm:px-0"
+          class="child2 col-span-2 mt-10 md:mt-0 grid md:grid-cols-1 grid-cols-1 gap-8 sm:grid-cols-2"
         >
-          <!-- Each cart -->
+          <div class="border rounded-md bg-gray-50">
+            <div class="flex justify-between px-4 py-4">
+              <p>Subtotal</p>
+              <p class="font-semibold">#20,400</p>
+            </div>
+            <hr />
+            <div class="flex justify-between px-4 py-4">
+              <p>Task</p>
+              <p class="font-semibold">#0</p>
+            </div>
+            <hr />
+            <div class="flex justify-between px-4 py-4">
+              <p>Delivery fee</p>
+              <p class="font-semibold">#2,000</p>
+            </div>
+            <hr />
+            <div class="flex justify-between px-4 py-4">
+              <p class="font-bold">Total</p>
+              <p class="font-semibold">#22,400</p>
+            </div>
+          </div>
 
-          <!--cart end-->
+          <div
+            class="px-4 flex flex-col gap-8 py-4 text-[Grey/900] border rounded"
+          >
+            <div class="flex flex-col gap-2">
+              <p class="text-lg font-semibold">Delivery address</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <p class="text-lg font-semibold">Payment information</p>
+              <div>
+                <p class="font-medium">Credit card</p>
+                <p>Master card</p>
+                <p>***********676</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-
-      <!-- 
-
-
-    <form action="" id="">
-      <div>
-        <div>
-          <input id="search" class="search" type="text" name="search" />
-        </div>
-
-        <select name="" class="sell" id="cate">
-          <option value="all">All</option>
-        </select>
-      </div>
-    </form>
-
-
-       -->
+      <!--jfjfjfjjjjjjjjjjjjjjjjjjj-->
       <section class="mt-24 px-6 sm:px-10 bg-[#131F0D] text-white">
         <div
           class="grid grid-cols-2 lg:grid-cols-6 sm:grid-cols-4 gap-y-6 py-6 sm-py-10"
