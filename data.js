@@ -84,9 +84,12 @@
 ///////////////  NETLIFY API //////////////////
 
 // Function to fetch submissions
+document.getElementById("sumit").addEventListener("click", () => {
+  window.location.href = "hold.html";
+});
 async function fetchSubmissions() {
   try {
-    const response = await fetch("/.netlify/functions/get-submissions");
+    const response = await fetch("/netlify/functions/get-submissions");
     if (!response.ok) {
       throw new Error(`Error: ${response.statusText}`);
     }
