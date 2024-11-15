@@ -10,7 +10,13 @@ const fetchSubmissions = async () => {
   try {
     // Fetch form data
     const response = await fetch(url, { headers });
-    const forms = await response.json();
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const forms = await response.json(); // No need to JSON.parse()
+    console.log(forms);
 
     // Find the specific form by name
     const userForm = forms.find((form) => form.name === "userForm");
@@ -20,7 +26,12 @@ const fetchSubmissions = async () => {
         `${url}/${userForm.id}/submissions`,
         { headers }
       );
-      const submissions = await submissionsResponse.json();
+
+      if (!submissionsResponse.ok) {
+        throw new Error(`HTTP error! Status: ${submissionsResponse.status}`);
+      }
+
+      const submissions = await submissionsResponse.json(); // No need to JSON.parse()
       console.log(submissions);
 
       // Render data on the page
@@ -29,17 +40,6 @@ const fetchSubmissions = async () => {
       console.error("Form not found.");
     }
   } catch (error) {
-    console.error("Error fetching submissions:", error);
+    console.error("Error fetching submissions:", error.message);
   }
 };
-
-const displaySubmissions = (submissions) => {
-  const container = document.getElementById("submissions");
-  submissions.forEach((submission) => {
-    const div = document.createElement("div");
-    div.textContent = `Name: ${submission.data.name}, Email: ${submission.data.email}`;
-    container.appendChild(div);
-  });
-};
-
-fetchSubmissions();
