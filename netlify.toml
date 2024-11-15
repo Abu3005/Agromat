@@ -1,5 +1,0 @@
-[build]
-  functions = "netlify/functions"  # Directory where functions are stored
-
-[[plugins]]
-  package = "@netlify/plugin-functions-install-core"  # Automatically installs dependencies for serverless functions
