@@ -1,5 +1,5 @@
 const fetchSubmissions = async () => {
-  const url = "https://api.netlify.com/api/v1/forms"; // Forms endpoint
+  const url = "https://agromat.netlify.app/.netlify/functions/form-handler"; // Forms endpoint
   const token = "nfp_usSdYPqKSPEv18yDZXHXzNt5KBXnY16t526b"; // Replace with your token
 
   const headers = {

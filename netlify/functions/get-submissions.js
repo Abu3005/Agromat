@@ -3,8 +3,8 @@
 const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
-  const siteId = "YOUR_SITE_ID"; // Replace with your Netlify site ID
-  const formId = "user-information"; // Replace with your form name
+  const siteId = "022524ba-613e-4a15-b534-d22026b2807c"; // Replace with your Netlify site ID
+  const formId = "JoinUs-User"; // Replace with your form name
   const apiToken = process.env.NETLIFY_API_TOKEN; // Set in Netlify environment variables
 
   const url = `https://api.netlify.com/api/v1/sites/${siteId}/forms/${formId}/submissions`;
