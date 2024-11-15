@@ -1,36 +1,31 @@
-// netlify/functions/get-submissions.js
+export const handler = async (event) => {
+  if (event.httpMethod === "POST") {
+    try {
+      const body = JSON.parse(event.body);
 
-const fetch = require("node-fetch");
+      // Log the received data (process it as needed)
+      console.log("Received form data:", body);
 
-exports.handler = async (event, context) => {
-  const siteId = "YOUR_SITE_ID"; // Replace with your Netlify site ID
-  const formId = "user-information"; // Replace with your form name
-  const apiToken = process.env.NETLIFY_API_TOKEN; // Set in Netlify environment variables
+      // Here, handle saving or any further processing
+      return {
+        statusCode: 200,
+        body: JSON.stringify({ message: "Form submission successful" }),
+      };
+    } catch (error) {
+      console.error("Error processing form submission:", error);
 
-  const url = `https://api.netlify.com/api/v1/sites/${siteId}/forms/${formId}/submissions`;
-
-  try {
-    const response = await fetch(url, {
-      headers: {
-        Authorization: `Bearer ${apiToken}`,
-        "Content-Type": "application/json",
-      },
-    });
-
-    if (!response.ok) {
-      throw new Error(`Error: ${response.statusText}`);
+      return {
+        statusCode: 500,
+        body: JSON.stringify({
+          message: "Error processing form",
+          error: error.message,
+        }),
+      };
     }
-
-    const data = await response.json();
-
+  } else {
     return {
-      statusCode: 200,
-      body: JSON.stringify(data),
-    };
-  } catch (error) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: error.message }),
+      statusCode: 405,
+      body: JSON.stringify({ message: "Method Not Allowed" }),
     };
   }
 };
