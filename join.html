@@ -201,6 +201,7 @@
           id="myForm"
           name="JoinUs-User"
           method="POST"
+          action="/.netlify/functions/form-handler"
           netlify
         >
           <div
@@ -298,11 +299,12 @@
                   >
                   <br />
                   <input
-                    type="file"
+                    type="hidden"
                     name="educationEvidence"
                     id="educationEvidence"
                     class="hidden"
                     disabled
+                    value="educationEvidence"
                   />
                   <span class="text-xs block pt-2 pl-3 text-red-600"
                     >Jpg,Png,Pdf (less than 5mb)</span
