@@ -1,5 +1,12 @@
 // netlify/functions/get-submissions.js
 
+// exports.handler = (event, context) => {
+//   return {
+//     statusCode: 200,
+//     body: "hello world",
+//   };
+// };
+
 const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
