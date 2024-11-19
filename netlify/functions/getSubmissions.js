@@ -80,40 +80,40 @@ exports.handler = async () => {
 //   }
 // };
 
-const fetch = require("node-fetch");
+// const fetch = require("node-fetch");
 
-exports.handler = async () => {
-  const NETLIFY_AUTH_TOKEN = process.env.NETLIFY_AUTH_TOKEN; // Set in environment variables
-  const SITE_ID = process.env.NETLIFY_SITE_ID; // Set in environment variables
+// exports.handler = async () => {
+//   const NETLIFY_AUTH_TOKEN = process.env.NETLIFY_AUTH_TOKEN; // Set in environment variables
+//   const SITE_ID = process.env.NETLIFY_SITE_ID; // Set in environment variables
 
-  const response = await fetch(`https://api.netlify.com/api/v1/forms`, {
-    headers: {
-      Authorization: `Bearer ${NETLIFY_AUTH_TOKEN}`,
-    },
-  });
+//   const response = await fetch(`https://api.netlify.com/api/v1/forms`, {
+//     headers: {
+//       Authorization: `Bearer ${NETLIFY_AUTH_TOKEN}`,
+//     },
+//   });
 
-  const forms = await response.json();
-  const form = forms.find((f) => f.name === "user-form");
+//   const forms = await response.json();
+//   const form = forms.find((f) => f.name === "user-form");
 
-  if (form) {
-    const submissions = await fetch(
-      `https://api.netlify.com/api/v1/forms/${form.id}/submissions`,
-      {
-        headers: {
-          Authorization: `Bearer ${NETLIFY_AUTH_TOKEN}`,
-        },
-      }
-    );
+//   if (form) {
+//     const submissions = await fetch(
+//       `https://api.netlify.com/api/v1/forms/${form.id}/submissions`,
+//       {
+//         headers: {
+//           Authorization: `Bearer ${NETLIFY_AUTH_TOKEN}`,
+//         },
+//       }
+//     );
 
-    const data = await submissions.json();
-    return {
-      statusCode: 200,
-      body: JSON.stringify(data),
-    };
-  }
+//     const data = await submissions.json();
+//     return {
+//       statusCode: 200,
+//       body: JSON.stringify(data),
+//     };
+//   }
 
-  return {
-    statusCode: 404,
-    body: JSON.stringify({ message: "Form not found" }),
-  };
-};
+//   return {
+//     statusCode: 404,
+//     body: JSON.stringify({ message: "Form not found" }),
+//   };
+// };
