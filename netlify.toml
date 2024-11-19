@@ -1,5 +1,11 @@
 [build]
-functions="functions"
+functions="netlify/functions"
 
 [dev]
-  port = 5050
+  port = 8080
+  publish = "public"
+  
+
+
+
+  

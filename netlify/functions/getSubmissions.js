@@ -11,7 +11,7 @@ exports.handler = async () => {
   });
 
   const forms = await formsResponse.json();
-  const form = forms.find((f) => f.name === "user-form");
+  const form = forms.find((f) => f.name === "myForm");
 
   if (form) {
     const submissionsResponse = await fetch(
