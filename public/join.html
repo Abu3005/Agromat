@@ -196,34 +196,47 @@
         <div></div>
       </div>
       <section class="2xl:px-16 pb-20 pt-36 px-6 sm:px-10">
-        <form name="user-form" method="POST" data-netlify="true">
+        <form
+          name="user-form"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+        >
+          <!-- Hidden field required for Netlify forms -->
           <input type="hidden" name="form-name" value="user-form" />
+
+          <!-- Optional: Honeypot field for spam protection -->
+          <p style="display: none">
+            <label> Don’t fill this out: <input name="bot-field" /> </label>
+          </p>
+
           <div>
-            <label>Name: <input type="text" name="name" required /></label>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
           </div>
           <div>
-            <label>Email: <input type="email" name="email" required /></label>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
           </div>
           <div>
-            <label>Phone: <input type="tel" name="phone" required /></label>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
           </div>
-          <button type="submit">Submit</button>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
         </form>
 
-        <!-- <div id="dataDisplay" class="bg-white p-6 rounded-lg shadow-lg">
-          
-        </div> -->
-        <!--  -->
-      </section>
-      <div class="container mx-auto p-4">
-        <h1 class="text-3xl text-center font-semibold mb-8">
-          Submitted User Data
-        </h1>
-
-        <div id="submissions" class="bg-white p-6 rounded-lg shadow-lg">
-          <!-- Submissions will be displayed here -->
+        <!-- Include success message handling -->
+        <div id="success-message" style="display: none">
+          <p>Thank you for submitting the form!</p>
         </div>
-      </div>
+
+        <!-- Include error message handling -->
+        <div id="error-message" style="display: none">
+          <p>Something went wrong. Please try again later.</p>
+        </div>
+      </section>
 
       <!-- footer -->
       <!-- footer -->
@@ -302,5 +315,14 @@
 
     <script src="script.js"></script>
     <script src="data.js"></script>
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default behavior (if using JavaScript to handle submission)
+
+        // Show success message for demonstration (Netlify handles submission directly)
+        document.getElementById("success-message").style.display = "block";
+        e.target.reset(); // Reset the form
+      });
+    </script>
   </body>
 </html>
