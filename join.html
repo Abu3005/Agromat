@@ -196,29 +196,391 @@
         <div></div>
       </div>
       <section class="2xl:px-16 pb-20 pt-36 px-6 sm:px-10">
-        <form name="user-form" method="POST" data-netlify="true">
-          <!-- Hidden field required for Netlify forms -->
-          <input type="hidden" name="form-name" value="user-form" />
+        <form
+          class="grid grid-cols-1 gap-10"
+          id="myForm"
+          name="JoinUs-User"
+          method="POST"
+          netlify
+        >
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <!-- Personal Information Section -->
+            <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+              Personal Information
+            </p>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3 px-10 sm:px-0">
+              <div>
+                <label for="fullName" class="text-gray-700 pb-1 block"
+                  >Full name</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="fullName"
+                  placeholder="First, second and last name"
+                  name="fullName"
+                  required
+                />
+              </div>
 
-          <!-- Optional: Honeypot field for spam protection -->
-          <p style="display: none">
-            <label> Don’t fill this out: <input name="bot-field" /> </label>
-          </p>
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="phoneNumber"
+                  >Phone number</label
+                >
+                <input
+                  class="p-2 border w-full rounded intl-tel-input"
+                  id="phoneNumber"
+                  type="tel"
+                  placeholder="7747575755"
+                  name="phoneNumber"
+                  required
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-5 pt-3 px-10 sm:px-0 sm:col-start-2 lg:col-start-3"
+            >
+              <div>
+                <label for="email" class="text-gray-700 block pb-1"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="p-2 w-full border rounded"
+                  id="email"
+                  placeholder="e.g example@gmail.com"
+                  name="email"
+                  required
+                />
+              </div>
 
-          <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+              <div class="">
+                <label class="block pb-1 text-gray-700" for="address"
+                  >Residential address</label
+                >
+                <input
+                  class="p-2 w-full border text- rounded"
+                  type="text"
+                  id="address"
+                  placeholder="No7, akarabata, modakeke"
+                  name="address"
+                  required
+                />
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <div>
+              <!-- Education Section -->
+              <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+                Education
+              </p>
+              <div class="flex mt-2">
+                <img
+                  class="mt-2 sm:h-24 md:h-full"
+                  src="./images/file.png"
+                  alt=""
+                />
+                <div class="ml-3 mt-5">
+                  <p class="pb-2 pl-3">
+                    Upload proof for highest level of education
+                  </p>
+                  <label
+                    for="educationEvidence"
+                    class="ml-3 py-1.5 px-3 text-sm rounded border text-[#218225] border-[#218225]"
+                    >Upload document</label
+                  >
+                  <br />
+                  <input
+                    type="file"
+                    name="educationEvidence"
+                    id="educationEvidence"
+                    class="hidden"
+                    disabled
+                  />
+                  <span class="text-xs block pt-2 pl-3 text-red-600"
+                    >Jpg,Png,Pdf (less than 5mb)</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3 px-10 sm:px-0">
+              <div>
+                <label for="educationLevel" class="text-gray-700 pb-1 block"
+                  >Highest level of Education</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="educationLevel"
+                  placeholder="HND"
+                  name="educationLevel"
+                  required
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="graduationDate"
+                  >Graduation date</label
+                >
+                <input
+                  class="p-2 border w-full rounded"
+                  id="graduationDate"
+                  type="date"
+                  name="graduationDate"
+                  required
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-5 pt-3 px-10 sm:px-0 sm:col-start-2 lg:col-start-3"
+            >
+              <div>
+                <label for="institution" class="text-gray-700 block pb-1"
+                  >Name of institution</label
+                >
+                <input
+                  type="text"
+                  class="p-2 w-full border rounded"
+                  id="institution"
+                  name="institution"
+                  required
+                />
+              </div>
+
+              <div class="">
+                <label class="block pb-1 text-gray-700" for="city">City</label>
+                <input
+                  class="p-2 w-full border text- rounded"
+                  type="text"
+                  id="city"
+                  name="city"
+                  required
+                />
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required />
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <!-- Work Experience Section -->
+            <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+              Relevant Work Experience
+            </p>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3">
+              <div>
+                <label for="companyName" class="text-gray-700 pb-1 block"
+                  >Company name</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="companyName"
+                  name="companyName"
+                  required
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="employmentDate"
+                  >Employment date</label
+                >
+                <input
+                  class="p-2 border w-full rounded"
+                  id="employmentDate"
+                  type="date"
+                  name="employmentDate"
+                  required
+                />
+              </div>
+            </div>
+            <div
+              class="pt-6 sm:col-start-2 sm:row-start-2 lg:col-start-3 lg:row-start-1"
+            >
+              <label for="jobTitle" class="text-gray-700 block pb-1"
+                >Job title</label
+              >
+              <input
+                type="text"
+                class="p-2 w-full border rounded"
+                id="jobTitle"
+                placeholder="Accountant"
+                name="jobTitle"
+                required
+              />
+            </div>
+            <div
+              class="lg:col-start-2 lg:col-span-2 mt-6 sm:col-start-2 sm:row-start-3"
+            >
+              <label class="block pb-1 text-gray-700" for="roleDescription"
+                >Brief description of your role</label
+              >
+              <textarea
+                class="border w-full"
+                name="roleDescription"
+                id="roleDescription"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
           </div>
-          <div>
-            <button type="submit">Submit</button>
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <!-- References Section -->
+            <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+              References
+            </p>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3 px-10 sm:px-0">
+              <div>
+                <label for="referenceName" class="text-gray-700 pb-1 block"
+                  >Reference name</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="referenceName"
+                  placeholder="First, second and last name"
+                  name="referenceName"
+                  required
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="referenceNumber"
+                  >Reference Phone number</label
+                >
+                <input
+                  class="p-2 border w-full rounded intl-tel-input"
+                  id="referenceNumber"
+                  type="tel"
+                  placeholder="7068086221"
+                  name="referenceNumber"
+                  required
+                />
+              </div>
+            </div>
+            <div
+              class="grid gap-5 pt-3 px-10 sm:px-0 sm:col-start-2 lg:col-start-3"
+            >
+              <div>
+                <label for="referenceEmail" class="text-gray-700 block pb-1"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  class="p-2 w-full border rounded"
+                  id="referenceEmail"
+                  placeholder="e.g example@gmail.com"
+                  name="referenceEmail"
+                  required
+                />
+              </div>
+
+              <div class="">
+                <label class="block pb-1 text-gray-700" for="referenceAddress"
+                  >Residential address</label
+                >
+                <input
+                  class="p-2 w-full border text- rounded"
+                  type="text"
+                  id="referenceAddress"
+                  placeholder="No7, akarabata, modakeke"
+                  name="referenceAddress"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            id="form-div1"
+            class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
+          >
+            <!-- Additional Information Section -->
+            <p class="text-gray-900 text-2xl font-semibold pb-4 sm:pb-0">
+              Additional Information
+            </p>
+            <div id="form-div2" class="flex flex-col gap-5 pt-3 px-10 sm:px-0">
+              <div>
+                <label for="languages" class="text-gray-700 pb-1 block"
+                  >Your proficient language ?</label
+                >
+                <input
+                  type="text"
+                  class="p-2 border w-full rounded"
+                  id="languages"
+                  placeholder="English, Arabic"
+                  name="languages"
+                  required
+                />
+              </div>
+
+              <div id="form-div3" class="">
+                <label class="text-gray-700 pb-1 block" for="canTravel"
+                  >Can you travel on work basis</label
+                >
+                <select
+                  name="canTravel"
+                  class="p-2 w-full border text- rounded"
+                  id="canTravel"
+                  required
+                >
+                  <option value="" class="text-gray-400">Yes or No</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="grid gap-5 pt-3 px-10 sm:px-0 sm:col-start-2 lg:col-start-3"
+            >
+              <div>
+                <label for="expectedPerMonth" class="text-gray-700 block pb-1"
+                  >Salary expectation per month?</label
+                >
+                <input
+                  type="number"
+                  class="p-2 w-full border rounded"
+                  id="expectedPerMonth"
+                  placeholder="2000"
+                  name="expectedPerMonth"
+                  required
+                />
+              </div>
+
+              <div class="">
+                <label class="block pb-1 text-gray-700" for="canWorkWeekends"
+                  >Can you work on weekends?</label
+                >
+                <select
+                  name="canWorkWeekends"
+                  class="p-2 w-full border text- rounded"
+                  id="canWorkWeekends"
+                  required
+                >
+                  <option value="" class="text-gray-400">Yes or No</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="h-40 relative">
+            <button
+              class="absolute right-0 bottom-0 sm:px-20 px-14 py-3 bg-[#218225] text-white sm:py-4 border rounded"
+              type="submit"
+            >
+              Submit
+            </button>
           </div>
         </form>
 
@@ -311,7 +673,7 @@
     <script src="script.js"></script>
     <script src="data.js"></script>
     <script>
-      document.querySelector("form").addEventListener("submit", function (e) {
+      document.querySelector("myForm").addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent the default behavior (if using JavaScript to handle submission)
 
         // Show success message for demonstration (Netlify handles submission directly)
