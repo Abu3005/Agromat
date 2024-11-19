@@ -202,7 +202,9 @@
           name="JoinUs-User"
           method="POST"
           netlify
+          action="/.netlify/functions/logform"
         >
+          <input type="hidden" name="form-name" value="JoinUs-User" />
           <div
             id="form-div1"
             class="grid sm:grid-cols-2 gap-x-3 pt-2 border-t-2 lg:grid-cols-3"
@@ -585,7 +587,7 @@
         </form>
 
         <!-- Include success message handling -->
-        <div id="success-message" style="display: none">
+        <div id="success" style="display: none">
           <p>Thank you for submitting the form!</p>
         </div>
 
@@ -672,14 +674,5 @@
 
     <script src="script.js"></script>
     <script src="data.js"></script>
-    <script>
-      document.querySelector("myForm").addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent the default behavior (if using JavaScript to handle submission)
-
-        // Show success message for demonstration (Netlify handles submission directly)
-        document.getElementById("success-message").style.display = "block";
-        e.target.reset(); // Reset the form
-      });
-    </script>
   </body>
 </html>
