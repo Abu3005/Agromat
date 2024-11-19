@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth sm:text-sm md:leading-[1.6]"
+  id="about-page"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agromart</title>
+    <link rel="icon" href="./images/leave.jpeg" class="rounded-lg" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+  </head>
+  <body
+    id="about"
+    class="body relative bg-white text-[#090913] dark:bg-[#090913] dark:text-white"
+  >
+    <!--MAIN-->
+    <main class="blury pt-20">
+      <p class="mb-5 md:text-2xl logo px-10">Checkout</p>
+      <section class="cart-section grid grid-cols-6 gap-10 px-10">
+        <form class="col-span-4 flex gap-8 flex-col">
+          <div class="grid gap-4 grid-cols-2">
+            <div class="col-span-2">
+              <p class="text-gray-900 text-lg font-medium">
+                contact information
+              </p>
+              <hr />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="fname" class="text-gray-700">First name</label>
+              <input
+                id="fname"
+                type="text"
+                class="border rounded-md px-2 py-1"
+                placeholder="Bola"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="lname" class="text-gray-700">Last name</label>
+              <input
+                id="lname"
+                type="text"
+                class="border rounded-md px-2 py-1"
+                placeholder="Shola"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="email" class="text-gray-700">Email</label>
+              <input
+                id="fname"
+                type="email"
+                class="border rounded-md px-2 py-1"
+                placeholder="bola@gmail.com"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="number" class="text-gray-700">Phone number</label>
+              <input
+                id="number"
+                type="number"
+                class="border rounded-md px-2 py-1"
+                placeholder=""
+              />
+            </div>
+          </div>
+          <div class="grid gap-4 grid-cols-2">
+            <div class="col-span-2">
+              <p class="text-gray-900 text-lg font-medium">Delivery details</p>
+              <hr />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="fname" class="text-gray-700">Street address 1</label>
+              <input
+                id="fname"
+                type="text"
+                class="border rounded-md px-2 py-1"
+                placeholder="Bola"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="lname" class="text-gray-700">Street address 2</label>
+              <input
+                id="lname"
+                type="text"
+                class="border rounded-md px-2 py-1"
+                placeholder="Shola"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="email" class="text-gray-700">Country</label>
+              <input
+                id="fname"
+                type="email"
+                class="border rounded-md px-2 py-1"
+                placeholder="bola@gmail.com"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="number" class="text-gray-700">State</label>
+              <input
+                id="number"
+                type="number"
+                class="border rounded-md px-2 py-1"
+                placeholder=""
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="email" class="text-gray-700">City</label>
+              <input
+                id="fname"
+                type="email"
+                class="border rounded-md px-2 py-1"
+                placeholder="bola@gmail.com"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="number" class="text-gray-700">Postal code</label>
+              <input
+                id="number"
+                type="number"
+                class="border rounded-md px-2 py-1"
+                placeholder=""
+              />
+            </div>
+          </div>
+
+          <div class="grid gap-4 grid-cols-2">
+            <div class="col-span-2">
+              <p class="text-gray-900 text-lg font-medium">Payment method</p>
+              <hr />
+            </div>
+            <div
+              class="col-span-2 grid grid-cols-2 p-4 border rounded-md gap-4"
+            >
+              <div class="col-span-2 border rounded-md flex gap-3 px-5 py-3">
+                <input
+                  type="radio"
+                  id="palpay"
+                  name="pay"
+                  class="w-4 text-gray-200"
+                />
+
+                <label for="palpay">
+                  <p class="text-gray-900">Credit card</p>
+                  <p class="text-gray-700 text-sm">
+                    Visa, Master card, America amex
+                  </p>
+                </label>
+              </div>
+              <div class="flex flex-col gap-1">
+                <label for="fname" class="text-gray-700">Card full-name</label>
+                <input
+                  id="fname"
+                  type="text"
+                  class="border rounded-md px-2 py-1"
+                  placeholder="Bola"
+                />
+              </div>
+              <div class="flex flex-col gap-1">
+                <label for="cardno" class="text-gray-700">Card number</label>
+                <input
+                  id="cardno"
+                  type="number"
+                  class="border rounded-md px-2 py-1"
+                  placeholder="1234567897665"
+                />
+              </div>
+              <div class="flex flex-col gap-1">
+                <label for="exdate" class="text-gray-700">Expiry date</label>
+                <input
+                  id="exdate"
+                  type="number"
+                  class="border rounded-md px-2 py-1"
+                  placeholder="Month/Year"
+                />
+              </div>
+              <div class="flex flex-col gap-1">
+                <label for="number" class="text-gray-700">CSV</label>
+                <input
+                  id="number"
+                  type="number"
+                  class="border rounded-md px-2 py-1"
+                  placeholder="345"
+                />
+              </div>
+            </div>
+            <div class="col-span-2 border rounded-md flex gap-3 px-5 py-3">
+              <input
+                type="radio"
+                id="palpay"
+                class="w-4 text-gray-200"
+                name="pay"
+              />
+
+              <label for="palpay">
+                <p class="text-gray-900">PayPal</p>
+                <p class="text-gray-700 text-sm">One click by paypal payment</p>
+              </label>
+            </div>
+            <div class="col-span-2 border rounded-md flex gap-3 px-5 py-3">
+              <input
+                type="radio"
+                id="crypto"
+                class="w-4 border border-gray-200"
+                name="pay"
+              />
+
+              <label for="crypto">
+                <p class="text-gray-900">Cryptocurency</p>
+                <p class="text-gray-700 text-sm">Etherioum, Ton, Dogs</p>
+              </label>
+            </div>
+          </div>
+        </form>
+        <aside class="w-full col-span-2">
+          <div class="grid grid-cols-8 border border-1 rounded-md">
+            <img
+              class="col-span-3 rounded-l-md row-span-3"
+              src="/images/egg.png"
+              alt=""
+            />
+            <div
+              class="row-start-1 lg:pl-4 pl-2 col-start-4 col-span-4 my-auto"
+            >
+              <p class="text-2xl font-bold">Beans</p>
+            </div>
+            <p class="col-span-4 lg:pl-4 lg:text-xl pl-2 text-[#C89200]">
+              #2000
+            </p>
+
+            <div class="row-start-1 col-start-8 my-auto">
+              <i class="fa-regular fa-trash-can translate-y-1"></i>
+            </div>
+            <div
+              class="grid grid-cols-3 mt-1 row-start-3 col-start-4 col-span-4 lg:pl-4 pl-2 items-center -translate-y-1"
+            >
+              <button
+                class="rounded-md bg-white border border-[#218225] px-4 text-[#218225] py-2 lg:py-3 flex justify-center items-center"
+              >
+                <i class="fa-sharp fa-solid fa-minus"></i>
+              </button>
+              <div class="self-center justify-self-center rounded-md">
+                <span class="block text-3xl">3</span>
+              </div>
+              <button
+                class="rounded-md bg-[#218225] text-white flex px-4 py-2 lg:py-3 justify-center items-center border"
+              >
+                <i class="fa-sharp fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="border rounded-md bg-gray-50">
+              <div class="flex justify-between px-4 py-4">
+                <p>Subtotal</p>
+                <p class="font-semibold">#20,400</p>
+              </div>
+              <hr />
+              <div class="flex justify-between px-4 py-4">
+                <p>Task</p>
+                <p class="font-semibold">#0</p>
+              </div>
+              <hr />
+              <div class="flex justify-between px-4 py-4">
+                <p>Delivery fee</p>
+                <p class="font-semibold">#2,000</p>
+              </div>
+              <hr />
+              <div class="flex justify-between px-4 py-4">
+                <p class="font-bold">Total</p>
+                <p class="font-semibold">#22,400</p>
+              </div>
+              <hr />
+              <div class="px-4">
+                <button
+                  class="py-3 bg-[#218225] w-full border rounded-md mt-7 text-white mb-4"
+                >
+                  Checkout
+                </button>
+                <a
+                  href="product.html"
+                  class="py-3 inline-block text-[#218225] w-full rounded-md mt-4 border-[#218225] border mb-4 text-center"
+                >
+                  Continue shopping
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+      <!-- 
+
+
+
+
+
+
+
+       -->
+      <section class="mt-24 px-6 sm:px-10 bg-[#131F0D] text-white">
+        <div
+          class="grid grid-cols-2 lg:grid-cols-6 sm:grid-cols-4 gap-y-6 py-6 sm-py-10"
+        >
+          <div class="col-span-2">
+            <h1 class="foot text-2xl">Agromart</h1>
+            <p class="text-gray-700 mt-4 pr-7">
+              You are just one step away from revolutionizing the way you shop
+              for fresh, locally sourced produce with our online platform that
+              connects farmers directly to customers.
+            </p>
+          </div>
+          <ul class="text-gray-700 flex flex-col gap-5 font-medium">
+            <li class="text-gray-200">Links</li>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Products</li>
+            <li>Contact Us</li>
+            <li>Join Us</li>
+          </ul>
+          <ul class="text-gray-700 flex flex-col gap-5 font-medium">
+            <li class="text-gray-200">Services</li>
+            <li>Partner With Us</li>
+            <li>Consultations</li>
+            <li>Rent Farm Equipments</li>
+            <li>Services</li>
+          </ul>
+          <div class="col-span-2 sm:col-span-3 md:col-span-2">
+            <p class="font-bold">Subscribe to our Newsletter</p>
+            <form action="">
+              <label for="Subscribe" class="text-gray-500"
+                >Be the first to know the latest farm trends</label
+              ><br />
+              <input
+                class="px-3.5 py-1.5 mt-2"
+                placeholder="Email address"
+                id="subscribe"
+                type="text"
+              />
+              <button
+                class="bg-green-600 rounded inline-block px-3.5 py-1.5"
+                aria-placeholder="Email address"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <footer
+          class="text-gray-300 border-t-gray-300 border-t-2 flex justify-between items-center h-16 text-sm"
+        >
+          <p class="">&copy;<span>2023</span> Agromart - All rights reserved</p>
+          <ul class="flex gap-5">
+            <li>Terms &amp; Conditions</li>
+            <li>Cookies</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </footer>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

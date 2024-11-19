@@ -1,0 +1,292 @@
+{
+  "categories": {
+    "fruits": [
+      {
+        "name": "Orange",
+        "rank": 5,
+        "origin": "USA",
+        "description": "Citrus, tangy, and r...",
+        "price": 2.5,
+        "image": "img/orange.jpeg"
+      },
+      {
+        "name": "Pineapple",
+        "rank": 1,
+        "origin": "Korea",
+        "description": "Tropical fruit, tart...",
+        "price": 2.5,
+        "image": "img/pineapple.jpeg"
+      },
+      {
+        "name": "Mangoe",
+        "rank": 4,
+        "origin": "USA",
+        "description": "Sweet, juicy, tropical...",
+        "price": 2.5,
+        "image": "img/mangoe.jpeg"
+      },
+      {
+        "name": "Watermelon",
+        "rank": 3,
+        "origin": "Nigeria",
+        "description": "Large, sweet, juicy f...",
+        "price": 2.5,
+        "image": "img/watermelon.jpeg"
+      },
+      {
+        "name": "Grape",
+        "rank": 4,
+        "origin": "India",
+        "description": "Small, juicy fruit b...",
+        "price": 2.5,
+        "image": "img/grape.jpeg"
+      },
+      {
+        "name": "Strawberry",
+        "rank": 2,
+        "origin": "India",
+        "description": "Red, sweet, and juicy...",
+        "price": 2.5,
+        "image": "img/strawberry.jpeg"
+      },
+      {
+        "name": "Blueberry",
+        "rank": 4,
+        "origin": "USA",
+        "description": "Tiny, blue, flavorful...",
+        "price": 2.5,
+        "image": "img/blueberry.jpeg"
+      },
+      {
+        "name": "Apple",
+        "rank": 1,
+        "origin": "USA",
+        "description": "Crisp, sweet, juicy a...",
+        "price": 2.5,
+        "image": "img/apple.jpeg"
+      },
+      {
+        "name": "Pawpaw",
+        "rank": 3,
+        "origin": "USA",
+        "description": "Varieties: red, green...",
+        "price": 2.5,
+        "image": "img/pawpaw.jpeg"
+      },
+      {
+        "name": "Banana",
+        "rank": 2,
+        "origin": "Ecuador",
+        "description": "Curved fruit with so...",
+        "price": 1.2,
+        "image": "img/banana.jpeg"
+      }
+    ],
+    "vegetables": [
+      {
+        "name": "Carrot",
+        "rank": 1,
+        "origin": "USA",
+        "description": "Crunchy, sweet, oran...",
+        "price": 1.2,
+        "image": "img/carrot.jpeg"
+      },
+      {
+        "name": "Broccoli",
+        "rank": 2,
+        "origin": "Italy",
+        "description": "Green vegetable, tr...",
+        "price": 1.8,
+        "image": "img/broccoli.jpeg"
+      },
+      {
+        "name": "Spinach",
+        "rank": 3,
+        "origin": "USA",
+        "description": "Leafy green, rich ...",
+        "price": 2.0,
+        "image": "img/spinach.jpeg"
+      },
+      {
+        "name": "Tomatoe",
+        "rank": 4,
+        "origin": "Netherlands",
+        "description": "Juicy, red fruit ve...",
+        "price": 1.0,
+        "image": "img/tomatoe.jpeg"
+      },
+      {
+        "name": "Cucumber",
+        "rank": 5,
+        "origin": "Spain",
+        "description": "Cool, crunchy, water...",
+        "price": 0.9,
+        "image": "img/cucumber.jpeg"
+      },
+      {
+        "name": "Potato",
+        "rank": 6,
+        "origin": "Ireland",
+        "description": "Starchy, versatile t...",
+        "price": 0.5,
+        "image": "img/potato.jpeg"
+      },
+      {
+        "name": "Onion",
+        "rank": 7,
+        "origin": "India",
+        "description": "Pungent bulb, adds...",
+        "price": 0.7,
+        "image": "img/onion.jpeg"
+      },
+      {
+        "name": "Pepper",
+        "rank": 8,
+        "origin": "Mexico",
+        "description": "Colorful, crunchy, s...",
+        "price": 1.5,
+        "image": "img/pepper.jpeg"
+      },
+      {
+        "name": "Cauliflower",
+        "rank": 9,
+        "origin": "France",
+        "description": "White, crunchy, mild...",
+        "price": 1.6,
+        "image": "img/cauliflower.jpeg"
+      },
+      {
+        "name": "Zucchini",
+        "rank": 10,
+        "origin": "Turkey",
+        "description": "Green, soft-skinned...",
+        "price": 1.4,
+        "image": "img/zucchini.jpeg"
+      }
+    ],
+    "foods": [
+      {
+        "name": "Rice",
+        "rank": 1,
+        "origin": "China",
+        "description": "Staple grain, wide...",
+        "price": 1.5,
+        "image": "img/rice.jpeg"
+      },
+      {
+        "name": "Beans",
+        "rank": 2,
+        "origin": "Mexico",
+        "description": "Protein-rich, versati...",
+        "price": 2.0,
+        "image": "img/beans.jpeg"
+      },
+      {
+        "name": "Yam",
+        "rank": 3,
+        "origin": "Nigeria",
+        "description": "Starchy tuber, boil...",
+        "price": 3.0,
+        "image": "img/yam.jpeg"
+      },
+      {
+        "name": "Maize",
+        "rank": 4,
+        "origin": "USA",
+        "description": "Versatile grain, use...",
+        "price": 1.2,
+        "image": "img/maize.jpeg"
+      },
+      {
+        "name": "Wheat",
+        "rank": 5,
+        "origin": "Russia",
+        "description": "Grain for bread, p...",
+        "price": 2.0,
+        "image": "img/wheat.jpeg"
+      },
+      {
+        "name": "Cassava",
+        "rank": 6,
+        "origin": "Brazil",
+        "description": "Starchy tuber, use...",
+        "price": 1.8,
+        "image": "img/cassava.jpeg"
+      },
+      {
+        "name": "Barley",
+        "rank": 7,
+        "origin": "India",
+        "description": "Grain for soups, b...",
+        "price": 1.5,
+        "image": "img/barley.jpeg"
+      },
+      {
+        "name": "Millet",
+        "rank": 8,
+        "origin": "Africa",
+        "description": "Small-seed grain f...",
+        "price": 1.0,
+        "image": "img/millet.jpeg"
+      },
+      {
+        "name": "Lentils",
+        "rank": 9,
+        "origin": "India",
+        "description": "Small, protein-rich...",
+        "price": 1.7,
+        "image": "img/lentils.jpeg"
+      },
+      {
+        "name": "Oats",
+        "rank": 10,
+        "origin": "Scotland",
+        "description": "Grain for oatmeal, ...",
+        "price": 2.2,
+        "image": "img/oats.jpeg"
+      }
+    ],
+    "dairy_products": [
+      {
+        "name": "Milk",
+        "rank": 1,
+        "origin": "USA",
+        "description": "Calcium-rich white...",
+        "price": 1.5,
+        "image": "img/milk.jpeg"
+      },
+      {
+        "name": "Cheese",
+        "rank": 2,
+        "origin": "France",
+        "description": "Solid from milk c...",
+        "price": 3.5,
+        "image": "img/cheese.jpeg"
+      },
+      {
+        "name": "Yogurt",
+        "rank": 3,
+        "origin": "Greece",
+        "description": "Creamy, fermented ...",
+        "price": 2.0,
+        "image": "img/yogurt.jpeg"
+      },
+      {
+        "name": "Butter",
+        "rank": 4,
+        "origin": "Denmark",
+        "description": "Creamy spread from...",
+        "price": 2.8,
+        "image": "img/butter.jpeg"
+      },
+      {
+        "name": "Cream",
+        "rank": 5,
+        "origin": "USA",
+        "description": "Thick liquid from...",
+        "price": 2.5,
+        "image": "img/cream.jpeg"
+      }
+    ]
+  }
+}
